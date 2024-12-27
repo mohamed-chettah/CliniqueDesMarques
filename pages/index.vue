@@ -1,24 +1,20 @@
 <script setup lang="ts">
 
-import Clients from "~/components/Hero/Clients.vue";
+import MainHero from "~/components/Hero/MainHero.vue";
+import SliderProduct from "~/components/Product/SliderProduct.vue";
 </script>
 
 <template>
-  <div class="container mx-auto text-center flex flex-col gap-6">
-    <h1 class="text-6xl antialiased tracking-wide font-semibold leading-tight">L’Agence de <span class="text-purple-500">Branding</span>  et <br> de <span class="text-purple-500">Communication</span> à Lyon.</h1>
+  <div class="container mx-auto ">
+    <MainHero />
 
-    <p>
-      Nous donnons de la personnalité aux entreprises. Elles performent. Leurs clients adorent.
-    </p>
+    <SliderProduct />
 
-    <div class="flex gap-5 justify-center mt-5">
-      <UButton to="/contact" size="xl" class="bg-purple-500 text-white">Contactez-nous</UButton>
-      <UButton to="/contact" size="xl" class="bg-white border text-black">Nos Réalisations</UButton>
-    </div>
-
-
-    <Clients />
+    <MainHero />
   </div>
+
+
+
 
 </template>
 
