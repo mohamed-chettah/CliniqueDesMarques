@@ -1,0 +1,106 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@font-face {
+  font-family: 'Absans';
+  src: url('../fonts/Absans-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@theme {
+  --font-sans: 'Public Sans', sans-serif;
+
+  --breakpoint-3xl: 1920px;
+
+  --color-green-50: #EFFDF5;
+  --color-green-100: #D9FBE8;
+  --color-green-200: #B3F5D1;
+  --color-green-300: #75EDAE;
+  --color-green-400: #00DC82;
+  --color-green-500: #00C16A;
+  --color-green-600: #00A155;
+  --color-green-700: #007F45;
+  --color-green-800: #016538;
+  --color-green-900: #0A5331;
+  --color-green-950: #052E16;
+}
+/* ---------------------------------------------------------------------- Global  ----------------------------------------------------------------------*/
+
+@layer base {
+  .border {
+    @apply border-[0.5px] border-gray-200
+  }
+}
+
+:root {
+  color-scheme: dark;
+  --line: color-mix(in lch, canvasText 15%, transparent);
+}
+
+:root[data-theme=light] {
+  color-scheme: light only;
+  --line: color-mix(in lch, canvasText 35%, transparent);
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: whitesmoke;
+}
+
+h1,h2{
+  font-family: 'Absans', sans-serif;
+}
+
+p, a, h3, h4, h5, h6, span, div, button, input, label, select, textarea{
+  font-family: 'Inter', sans-serif;
+}
+
+
+:root {
+  --color-gray-100: 241 245 249;
+  --color-gray-300: 203 213 225;
+  --color-gray-400: 148 163 184;
+  --color-gray-600: 71 85 105;
+  --color-gray-700: 51 65 85;
+  --color-gray-800: 30 41 59;
+  --color-scrollbar-thumb: 94 29 213; /* #5e1dd5 */
+  --color-scrollbar-track: 49 51 59; /* #31333b */
+}
+
+.nuxt-ui-scrollbars ::-webkit-scrollbar {
+  background-color: transparent;
+  height: .6em;
+  width: .6em;
+}
+
+.nuxt-ui-scrollbars ::-webkit-scrollbar-track {
+  --tw-bg-opacity: 1;
+  height: 3px;
+  background-color: rgb(var(--color-scrollbar-track) / 1);
+  background-color: rgb(var(--color-scrollbar-track) / var(--tw-bg-opacity));
+}
+
+.nuxt-ui-scrollbars ::-webkit-scrollbar-thumb {
+  border-radius: .4em;
+  --tw-bg-opacity: 0.5;
+  height: 3px;
+  background-color: rgb(var(--color-scrollbar-thumb) / 1);
+  background-color: rgb(var(--color-scrollbar-thumb) / var(--tw-bg-opacity));
+}
+
+.nuxt-ui-scrollbars ::-webkit-scrollbar-thumb:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-scrollbar-thumb) / 0.8); /* Slightly darken on hover */
+  background-color: rgb(var(--color-scrollbar-thumb) / var(--tw-bg-opacity));
+}
+
