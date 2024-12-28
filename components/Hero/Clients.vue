@@ -3,12 +3,12 @@
 </script>
 
 <template>
-  <div class="bg-dark-50 relative w-full px-4 py-12">
+  <div class="bg-dark-50 relative w-full px-4 py-16">
     <UContainer>
       <h2 class="text-dark-900 text-center text-xl font-semibold">
         Ils nous ont fait confiance
       </h2>
-      <div class="mt-12 bg-purple-500 rounded-2xl xl:w-1/2 w-[80%] mx-auto">
+      <div class="mt-12 bg-purple rounded-2xl xl:w-1/2 w-[80%] mx-auto">
         <NuxtMarquee
             direction="right"
             gradientColor="var(--color-dark-50)"

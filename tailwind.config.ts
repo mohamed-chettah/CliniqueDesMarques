@@ -1,10 +1,16 @@
 import type { Config } from 'tailwindcss'
 export default <Partial<Config>>{
   theme: {
+    colors: {
+      'purples-100': '#907af7',
+      'purples-200': '#5e1dd5',
+      'test': '#6716DE',
+    },
     extend: {
       colors: {
-        'purple-100': '#907af7',
-        'purple-200': '#5e1dd5',
+        'purples-100': '#907af7',
+        'purples-200': '#5e1dd5',
+        'test': '#6716DE',
         'titan-white': {
           '50': '#f5f3ff',
           '100': '#efecfe',

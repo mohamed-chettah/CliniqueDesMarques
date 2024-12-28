@@ -39,6 +39,14 @@
   .border {
     @apply border-[0.5px] border-gray-200
   }
+
+  .text-purple {
+    @apply text-[#6716DE]
+  }
+
+  .bg-purple {
+    @apply bg-[#6716DE]
+  }
 }
 
 :root {
@@ -57,7 +65,7 @@ body {
   background-color: whitesmoke;
 }
 
-h1,h2{
+h1,h2,h3{
   font-family: 'Absans', sans-serif;
 }
 
