@@ -1,12 +1,9 @@
 <script setup lang="ts">
-const items = [
-  'https://picsum.photos/640/640?random=1',
-  'https://picsum.photos/640/640?random=2',
-  'https://picsum.photos/640/640?random=3',
-  'https://picsum.photos/640/640?random=4',
-  'https://picsum.photos/640/640?random=5',
-  'https://picsum.photos/640/640?random=6'
-]
+
+
+import CarouselResponsive from "~/components/Ui/CarouselResponsive.vue";
+import AvisClient from "~/components/Ui/AvisClient.vue";
+import GroupBadge from "~/components/Ui/GroupBadge.vue";
 
 const props = defineProps ({
 
@@ -19,19 +16,20 @@ const props = defineProps ({
 
   <p>01</p>
 
-  <div class="grid lg:grid-cols-10 grid-cols-5 items-start xl:gap-4 gap-6 mt-5">
+  <div class="grid lg:grid-cols-12 grid-cols-5 items-start xl:gap-4 gap-6 mt-5">
     <div class="col-span-5">
       <div class="flex flex-col gap-3">
-        <div class="flex gap-1">
-          <UBadge color="neutral">Badge</UBadge>
-          <UBadge color="neutral">Badge</UBadge>
-          <UBadge color="neutral">Badge</UBadge>
-        </div>
 
-        <h3 class="text-2xl font-bold mt-2 absans">La manufacture des blouses</h3>
+        <GroupBadge />
 
-        <p>
-          La mission confiée à La Clinique des Marques était claire : Afficher clairement qu’avec les accessoires Ail & Miel, la cuisine devient un jeu d’enfant
+        <h3 class="md:text-2xl text-xl font-bold mt-2 absans">La manufacture des blouses</h3>
+
+        <p class="tracking-wider xl:text-lg md:text-md text-sm">
+          Notre analyse a révélé deux axes stratégiques essentiels pour le repositionnement de la marque : la signification du vêtement de travail pour les collaborateurs et le manque de stylisme dans l’univers des vêtements professionnels.
+        </p>
+
+        <p class="tracking-wider xl:text-lg md:text-md text-sm">
+          D’une part, le vêtement professionnel n’est pas seulement fonctionnel, il incarne aussi un sentiment d’appartenance.
         </p>
 
         <div class="flex flex-col gap-4 mt-5">
@@ -59,40 +57,16 @@ const props = defineProps ({
       </div>
     </div>
 
-    <div class="lg:col-span-5 col-span-3">
-      <UCarousel
-          v-slot="{ item }"
-          loop
-          dots
-          auto-scroll
-          :items="items"
-          :ui="{
-          container: 'transition-[height]',
-          controls: 'absolute -bottom-8 inset-x-12',
-          dots: '-top-7',
-          dot: 'w-6 h-1'
-          }"
-          class="w-full max-w-xs mx-auto lg:block hidden"
-      >
-        <NuxtImg :src="item" width="320" height="320" class="rounded-lg" />
-      </UCarousel>
+    <div class="lg:col-span-7 col-span-5">
+      <div class="flex flex-col gap-4 items-center">
 
-      <UCarousel
-          v-slot="{ item }"
-          loop
-          auto-scroll
-          :items="items"
-          :ui="{
-          container: 'transition-[height]',
-          controls: 'absolute -bottom-8 inset-x-12',
-          dots: '-top-7',
-          dot: 'w-6 h-1'
-          }"
-          class="w-full max-w-xs mx-auto lg:hidden block"
-      >
-        <NuxtImg :src="item" width="320" height="320" class="rounded-lg" />
-      </UCarousel>
+        <AvisClient />
+        <CarouselResponsive />
+
+      </div>
     </div>
+
+
   </div>
 </template>
 
