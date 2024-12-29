@@ -50,7 +50,7 @@ const secondService = [
 
   <div class="xl:mx-0 mx-10 mt-32">
 
-    <h2 class="font-semibold ">Service</h2>
+    <h2 class="font-semibold ">Services</h2>
     <h3 class="text-3xl font-bold mt-2 text-purple">Des solutions sur mesure pour faire briller votre marque.</h3>
 
     <section class="flex flex-col gap-5 my-10">

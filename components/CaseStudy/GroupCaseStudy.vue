@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+import CardStudy from "~/components/CaseStudy/CardStudy.vue";
 </script>
 
 <template>
@@ -10,6 +11,9 @@
       <h2 class="font-semibold">Etudes de cas</h2>
       <h3 class="text-3xl font-bold mt-2">Des études de cas inspirantes pour révéler le potentiel de votre marque.</h3>
 
+      <section class="mt-10">
+        <CardStudy/>
+      </section>
     </div>
 
   </div>

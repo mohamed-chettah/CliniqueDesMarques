@@ -44,6 +44,18 @@
     @apply text-[#6716DE]
   }
 
+  .text-beige {
+    @apply text-[#FCF2F2]
+  }
+
+  .border-beige {
+    @apply border-[#FCF2F2]
+  }
+
+  .bg-beige {
+    @apply bg-[#FCF2F2]
+  }
+
   .bg-purple {
     @apply bg-[#6716DE]
   }
@@ -65,7 +77,7 @@ body {
   background-color: whitesmoke;
 }
 
-h1,h2,h3{
+h1,h2,.absans{
   font-family: 'Absans', sans-serif;
 }
 
