@@ -1,12 +1,5 @@
 <script setup lang="ts">
-const items = [
-  '/images/manufacutre-blouse/carte-de-visite-industrie-textile.jpg',
-  '/images/manufacutre-blouse/charte_graphique_mb_Page_4-1024x768.jpg',
-  '/images/manufacutre-blouse/charte_graphique_mb_Page_5-1024x768.jpg',
-  '/images/manufacutre-blouse/embroidery.jpg',
-  '/images/manufacutre-blouse/identite-visuelle-industrie-textile-1024x683.jpg',
-  '/images/manufacutre-blouse/logo-brode-industrie-textile.jpg'
-]
+
 </script>
 
 <template>
@@ -14,7 +7,6 @@ const items = [
         v-slot="{ item }"
         loop
         auto-scroll
-        :items="items"
         :ui="{
           container: 'transition-[height]',
           controls: 'absolute -bottom-8 inset-x-12',

@@ -1,17 +1,19 @@
-<script setup lang="ts">
-
+<script setup>
+const props = defineProps({
+  avisClient: Object
+})
 </script>
 
 <template>
-  <div class="flex flex-col gap-3 p-4 rounded-xl bg-white text-black">
+  <div class="flex flex-col gap-3 p-4 rounded-xl bg-white text-black  w-max-[180px] ">
 
-    <p class="text-xs"> Une prestation sur-mesure et un accompagnement de qualité réalisé <br> par La Clinique des Marques. Je recommande.</p>
+    <p class="text-xs xl:whitespace-pre-line"> {{ avisClient.avis }}</p>
 
-    <div class="flex items-center gap-2">
-      <UAvatar src="/images/manufacutre-blouse/photo-avis.jpeg" />
+    <div class="flex items-center gap-3">
+      <UAvatar :src="avisClient.avatar" size="xl"/>
       <div>
-        <p class="absans">Viriginie Doe</p>
-        <p class="text-xs font-semibold">Fondatrice de la manufactures des blouses</p>
+        <p class="absans">{{ avisClient.name }}</p>
+        <p class="text-xs font-semibold">{{ avisClient.job }}</p>
       </div>
     </div>
   </div>

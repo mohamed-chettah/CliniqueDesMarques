@@ -5,20 +5,17 @@ import CardService from "~/components/Service/CardService.vue";
 const firstService = [
   {
     "title": "Identité Visuelle",
-    "subtitle": "Nous donnons vie à votre marque.",
-    "description": "Création de logos et chartes graphiques uniques pour une identité forte.",
+    "description": "Nous concevons des logos uniques et des chartes graphiques sur mesure pour une identité forte et mémorable.",
     "icon": "i-lucide-paintbrush-vertical"
   },
   {
     "title": "Audit Marketing",
-    "subtitle": "Nous analysons et optimisons vos stratégies.",
-    "description": "Évaluons vos actions marketing pour maximiser votre impact et votre croissance.",
+    "description": "Nous analysons vos actions marketing pour maximiser votre impact et stimuler votre croissance.",
     "icon": "i-lucide-chart-line"
   },
   {
     "title": "Positionnement",
-    "subtitle": "Nous définissons votre place sur le marché.",
-    "description": "Clarifiez votre message et démarquez-vous avec un positionnement stratégique.",
+    "description": "Nous clarifions votre message et vous aidons à vous démarquer avec un positionnement clair et stratégique.",
     "icon": "i-lucide-target"
   }
 ];
@@ -26,20 +23,17 @@ const firstService = [
 const secondService = [
   {
     "title": "Plateforme de marque",
-    "subtitle": "Nous donnons du sens à votre identité.",
-    "description": "Structurez vos valeurs et votre vision pour raconter une histoire forte et inspirante.",
+    "description": "Nous structurons vos valeurs et votre vision pour raconter une histoire forte et inspirante.",
     "icon": "i-lucide-compass"
   },
   {
     "title": "Motion Design",
-    "subtitle": "Nous donnons vie à vos idées.",
-    "description": "Créez des animations captivantes pour renforcer votre communication visuelle.",
+    "description": "Nous créons des animations captivantes pour dynamiser votre communication et marquer les esprits.",
     "icon": "i-lucide-video"
   },
   {
     "title": "Création de site internet",
-    "subtitle": "Nous développons votre présence en ligne.",
-    "description": "Conception de sites modernes et performants pour valoriser votre marque.",
+    "description": "Nous concevons des sites modernes et performants pour valoriser votre marque et offrir une expérience utilisateur optimale.",
     "icon": "i-lucide-screen-share"
   }
 ];
@@ -51,19 +45,19 @@ const secondService = [
   <div class="xl:mx-0 mx-10 mt-32">
 
     <h2 class="font-semibold ">Services</h2>
-    <h3 class="text-3xl font-bold mt-2 text-purple">Des solutions sur mesure pour faire briller votre marque.</h3>
+    <h3 class="md:text-3xl text-2xl font-bold mt-2 text-purple">Des solutions sur mesure pour faire briller votre marque.</h3>
 
     <section class="flex flex-col gap-5 my-10">
 
       <div class="flex xl:flex-row gap-5 flex-col">
         <div v-for="service in firstService">
-          <CardService :title="service.title" :subtitle="service.subtitle" :description="service.description" :icon="service.icon" />
+          <CardService :title="service.title" :description="service.description" :icon="service.icon" />
         </div>
       </div>
 
       <div class="flex xl:flex-row gap-5 flex-col">
         <div v-for="service in secondService">
-          <CardService :title="service.title" :subtitle="service.subtitle" :description="service.description" :icon="service.icon" />
+          <CardService :title="service.title" :description="service.description" :icon="service.icon" />
         </div>
       </div>
 

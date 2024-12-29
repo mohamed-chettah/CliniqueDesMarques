@@ -6,50 +6,45 @@ import AvisClient from "~/components/Ui/AvisClient.vue";
 import GroupBadge from "~/components/Ui/GroupBadge.vue";
 
 const props = defineProps ({
-
+  number: String,
+  listBadge: Array,
+  title: String,
+  description1: String,
+  description2: String,
+  listTache: Array,
+  avisClient: Object,
+  listImage: Array
 })
 
 </script>
 
 <template>
-  <hr class="border-black/10 border-[0.5px] mx-auto my-5" />
+  <hr class="border-black/10 border-[1px] mx-auto my-5" />
 
-  <p>01</p>
+  <p>{{ number }}</p>
 
   <div class="grid lg:grid-cols-12 grid-cols-5 items-start xl:gap-4 gap-6 mt-5">
     <div class="col-span-5">
       <div class="flex flex-col gap-3">
 
-        <GroupBadge />
+        <GroupBadge :listBadge="listBadge"/>
 
-        <h3 class="md:text-2xl text-xl font-bold mt-2 absans">La manufacture des blouses</h3>
+        <h3 class="md:text-2xl text-xl font-bold mt-2 absans">{{ title }}</h3>
 
-        <p class="tracking-wider xl:text-lg md:text-md text-sm">
-          Notre analyse a révélé deux axes stratégiques essentiels pour le repositionnement de la marque : la signification du vêtement de travail pour les collaborateurs et le manque de stylisme dans l’univers des vêtements professionnels.
+        <p class="tracking-wider text-md text-sm">
+          {{ description1 }}
         </p>
 
-        <p class="tracking-wider xl:text-lg md:text-md text-sm">
-          D’une part, le vêtement professionnel n’est pas seulement fonctionnel, il incarne aussi un sentiment d’appartenance.
+        <p class="tracking-wider text-md text-sm">
+          {{ description2 }}
         </p>
 
         <div class="flex flex-col gap-4 mt-5">
-          <div class="flex gap-4">
+          <div class="flex gap-4 items-center" v-for="tache in listTache">
             <div class="rounded-full bg-white border-[2px] border-beige flex items-center p-1">
               <UIcon class="text-purple text-md" name="i-lucide-arrow-up-right" />
             </div>
-            <p>Typographie</p>
-          </div>
-          <div class="flex gap-4">
-            <div class="rounded-full bg-white border-[2px] border-beige flex items-center p-1">
-              <UIcon class="text-purple text-md" name="i-lucide-arrow-up-right" />
-            </div>
-            <p>Typographie</p>
-          </div>
-          <div class="flex gap-4">
-            <div class="rounded-full bg-white border-[2px] border-beige flex items-center p-1">
-              <UIcon class="text-purple text-md" name="i-lucide-arrow-up-right" />
-            </div>
-            <p>Typographie</p>
+            <p class="xl:text-sm text-xs">{{ tache }}</p>
           </div>
         </div>
 
@@ -60,8 +55,8 @@ const props = defineProps ({
     <div class="lg:col-span-7 col-span-5">
       <div class="flex flex-col gap-4 items-center">
 
-        <AvisClient />
-        <CarouselResponsive />
+        <AvisClient :avisClient="avisClient" />
+        <CarouselResponsive :items="listImage" />
 
       </div>
     </div>
