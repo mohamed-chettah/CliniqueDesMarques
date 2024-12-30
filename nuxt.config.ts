@@ -5,4 +5,12 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   pages: true,
   modules: ['@nuxt/image', '@nuxt/ui', 'nuxt-marquee', '@vueuse/motion/nuxt'],
+  gsap: {
+    composables: true,
+    provide: false,
+    extraPlugins: {
+      scrollTrigger: true,
+      motionPath: true
+    },
+  },
 })
