@@ -2,6 +2,22 @@
 
 import CardStudy from "~/components/CaseStudy/CardStudy.vue";
 
+onMounted(() => {
+  useGsap.to('.note-google',{
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backdropFilter: 'blur(10px)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+    scrollTrigger:{
+      trigger:'.case-study',
+      pinnedContainer: ".main",
+      start:'top 40%',
+      end : 'bottom 20%',
+      toggleActions: 'play reset play reset',
+    }
+  })
+
+});
+
 const listCaseStudy = [
   {
     number: "01",
@@ -54,11 +70,13 @@ const listCaseStudy = [
   }
 ]
 
+
+
 </script>
 
 <template>
 
-  <div class="bg-purple text-white mt-32 py-20">
+  <div class="case-study bg-purple text-white mt-32 py-20">
 
     <div class="container mx-auto">
       <div class="xl:mx-0 mx-10 ">

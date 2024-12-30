@@ -1,160 +1,3 @@
-<template>
-  <footer
-      class="bg-dark-50 dark:bg-dark-950 relative flex h-auto w-full flex-col overflow-hidden p-2"
-  >
-    <div class="relative z-10 grid w-full grid-cols-12 gap-y-4 lg:gap-y-0">
-      <div
-          class="col-span-full flex flex-col items-start justify-start gap-y-6 lg:col-span-4 xl:col-span-8"
-      >
-        <span
-            class="text-dark-950 dark:text-dark-50/50 font-inter inline-block w-full text-lg font-medium md:w-1/2"
-        >
-          LandiNuxt
-        </span>
-        <p
-            class="text-dark-950/50 dark:text-dark-50/50 font-inter inline-block w-full text-sm md:w-1/2"
-        >
-          Lorem ipsum dolor sit amet <br />
-          consectetur adipisicing elit.
-        </p>
-        <div
-            class="text-dark-950/50 dark:text-dark-50/50 flex items-center justify-start gap-x-4"
-        >
-          <UButton
-              icon="i-simple-icons-facebook"
-              variant="link"
-              color="neutral"
-              to="#"
-              target="_blank"
-          />
-          <UButton
-              icon="i-simple-icons-instagram"
-              variant="link"
-              color="neutral"
-              to="#"
-              target="_blank"
-          />
-          <UButton
-              icon="i-simple-icons-x"
-              variant="link"
-              color="neutral"
-              to="#"
-              target="_blank"
-          />
-          <UButton
-              icon="i-simple-icons-github"
-              variant="link"
-              color="neutral"
-              to="#"
-              target="_blank"
-          />
-        </div>
-      </div>
-      <ul
-          class="col-span-full flex w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
-      >
-        <template v-for="(nav, index) in navigation" :key="index">
-          <li
-              class="text-dark-950 dark:text-dark-50 font-inter mb-3 text-base font-medium capitalize"
-          >
-            {{ nav.label }}
-          </li>
-          <li v-for="(inner_link, _index) in nav.links" :key="_index">
-            <UButton
-                :to="inner_link.link"
-                target="_blank"
-                variant="link"
-                color="neutral"
-                size="lg"
-                class="p-0"
-            >
-              {{ inner_link.label }}
-            </UButton>
-          </li>
-        </template>
-      </ul>
-      <ul
-          class="col-span-full flex w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
-      >
-        <template v-for="(nav, index) in product_navigation" :key="index">
-          <li
-              class="text-dark-950 dark:text-dark-50 font-inter mb-3 text-base font-medium capitalize"
-          >
-            {{ nav.label }}
-          </li>
-          <li v-for="(inner_link, _index) in nav.links" :key="_index">
-            <UButton
-                :to="inner_link.link"
-                target="_blank"
-                variant="link"
-                color="neutral"
-                size="lg"
-                class="p-0 hover:underline"
-            >
-              {{ inner_link.label }}
-            </UButton>
-          </li>
-        </template>
-      </ul>
-      <ul
-          class="col-span-full flex w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
-      >
-        <template v-for="(nav, index) in other_navigation" :key="index">
-          <li
-              class="text-dark-950 dark:text-dark-50 font-inter mb-3 text-base font-medium capitalize"
-          >
-            {{ nav.label }}
-          </li>
-          <li v-for="(inner_link, _index) in nav.links" :key="_index">
-            <UButton
-                :to="inner_link.link"
-                target="_blank"
-                variant="link"
-                color="neutral"
-                size="lg"
-                class="p-0 hover:underline"
-            >
-              {{ inner_link.label }}
-            </UButton>
-          </li>
-        </template>
-      </ul>
-      <ul
-          class="col-span-full flex w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
-      >
-        <template v-for="(nav, index) in resources_navigation" :key="index">
-          <li
-              class="text-dark-950 dark:text-dark-50 font-inter mb-3 text-base font-medium capitalize"
-          >
-            {{ nav.label }}
-          </li>
-          <li v-for="(inner_link, _index) in nav.links" :key="_index">
-            <UButton
-                :to="inner_link.link"
-                target="_blank"
-                variant="link"
-                color="neutral"
-                size="lg"
-                class="p-0 hover:underline"
-            >
-              {{ inner_link.label }}
-            </UButton>
-          </li>
-        </template>
-      </ul>
-      <div
-          class="border-dark-950/10 dark:border-dark-50/10 text-dark-950/50 dark:text-dark-50/50 col-span-full mt-4 mb-2 flex items-center justify-center border-t pt-4 text-sm"
-      >
-        ©LandiNuxt is a Open Source Project by Eco Development Studios
-      </div>
-    </div>
-    <div class="absolute -bottom-96 left-1/2 -translate-x-1/2">
-      <div
-          class="from-primary-100 to-primary-300 dark:from-primary-500/30 dark:to-primary-300/30 size-[620px] rounded-full bg-gradient-to-br opacity-50 blur-3xl"
-      />
-    </div>
-  </footer>
-</template>
 
 <script setup lang="ts">
 const navigation = [
@@ -245,31 +88,127 @@ const product_navigation = [
   },
 ];
 
-const resources_navigation = [
-  {
-    label: "Resources",
-    links: [
-      {
-        label: "Documentation",
-        link: "#",
-      },
-      {
-        label: "Tutorials",
-        link: "#",
-      },
-      {
-        label: "Support",
-        link: "#",
-      },
-      {
-        label: "Webinars",
-        link: "#",
-      },
-      {
-        label: "Case Studies",
-        link: "#",
-      },
-    ],
-  },
-];
 </script>
+
+<template>
+  <footer
+      class="flex flex-col p-10 mt-20 bg-[url('/images/image-mesh-gradient.png')] bg-cover  bg-no-repeat text-white"
+  >
+    <div class="mx-auto container relative z-10 grid w-full grid-cols-12 gap-y-4 lg:gap-y-0">
+      <div
+          class="col-span-full flex flex-col items-start justify-start gap-y-6 lg:col-span-4 xl:col-span-8"
+      >
+        <span
+            class="text-dark-950 dark:text-dark-50/50 absans inline-block w-full text-lg font-medium md:w-1/2"
+        >
+          La Clinique Des Marques
+        </span>
+        <p
+            class="text-dark-950/50 dark:text-dark-50/50 font-inter inline-block w-full text-sm md:w-1/2"
+        >
+          Lorem ipsum dolor sit amet <br />
+          consectetur adipisicing elit.
+        </p>
+        <div
+            class="text-dark-950/50 dark:text-dark-50/50 flex items-center justify-start gap-x-4"
+        >
+          <UButton
+              icon="i-simple-icons-instagram"
+              variant="link"
+              color="neutral"
+              to="#"
+              target="_blank"
+              class="bg-purple text-white hover:text-beige"
+          />
+          <UButton
+              icon="i-simple-icons-linkedin"
+              variant="link"
+              color="neutral"
+              to="#"
+              target="_blank"
+              class="bg-purple text-white hover:text-beige"
+          />
+        </div>
+      </div>
+      <ul
+          class="col-span-full flex w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
+      >
+        <template v-for="(nav, index) in navigation" :key="index">
+          <li
+              class="text-dark-950 dark:text-dark-50 font-inter mb-3 text-base font-medium capitalize"
+          >
+            {{ nav.label }}
+          </li>
+          <li v-for="(inner_link, _index) in nav.links" :key="_index">
+            <UButton
+                :to="inner_link.link"
+                target="_blank"
+                variant="link"
+                color="neutral"
+                size="lg"
+                class="p-0"
+            >
+              {{ inner_link.label }}
+            </UButton>
+          </li>
+        </template>
+      </ul>
+      <ul
+          class="col-span-full flex w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
+      >
+        <template v-for="(nav, index) in product_navigation" :key="index">
+          <li
+              class="text-dark-950 dark:text-dark-50 font-inter mb-3 text-base font-medium capitalize"
+          >
+            {{ nav.label }}
+          </li>
+          <li v-for="(inner_link, _index) in nav.links" :key="_index">
+            <UButton
+                :to="inner_link.link"
+                target="_blank"
+                variant="link"
+                color="neutral"
+                size="lg"
+                class="p-0 hover:underline"
+            >
+              {{ inner_link.label }}
+            </UButton>
+          </li>
+        </template>
+      </ul>
+      <ul
+          class="col-span-full flex w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
+      >
+        <template v-for="(nav, index) in other_navigation" :key="index">
+          <li
+              class="text-dark-950 dark:text-dark-50 font-inter mb-3 text-base font-medium capitalize"
+          >
+            {{ nav.label }}
+          </li>
+          <li v-for="(inner_link, _index) in nav.links" :key="_index">
+            <UButton
+                :to="inner_link.link"
+                target="_blank"
+                variant="link"
+                color="neutral"
+                size="lg"
+                class="p-0 hover:underline"
+            >
+              {{ inner_link.label }}
+            </UButton>
+          </li>
+        </template>
+      </ul>
+      <div
+          class="gap-1 text-black border-dark-950/10 dark:border-dark-50/10 text-dark-950/50 dark:text-dark-50/50 col-span-full mt-4 mb-2 flex items-center justify-center border-t pt-4 text-sm"
+      >
+       <p>© Made with ❤️ by </p>  <a href="https://www.mc-studio.eu/"> MC Studio</a>
+      </div>
+    </div>
+    <div class="absolute -bottom-96 left-1/2 -translate-x-1/2">
+      <div
+          class="from-primary-100 to-primary-300 dark:from-primary-500/30 dark:to-primary-300/30 size-[620px] rounded-full bg-gradient-to-br opacity-50 blur-3xl"
+      />
+    </div>
+  </footer>
+</template>

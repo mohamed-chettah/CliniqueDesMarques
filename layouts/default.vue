@@ -1,20 +1,14 @@
 <script setup lang="ts">
 import Navbar from "~/components/Main/Navbar.vue";
 import Footer from "~/components/Main/Footer.vue";
+
+
 </script>
 
 <template>
 
-  <Navbar class="pt-2"/>
 
-  <div class="background"></div>
-  <div class="shape1"></div>
-  <div class="shape2"></div>
-  <div class="mt-52">
-    <slot />
-  </div>
-
-  <div class="fixed md:bottom-2 bottom-[1px] xl:left-2 left-[0.5px] xl:p-4 p-2 bg-white rounded-xl z-50 border">
+  <div class="note-google fixed md:bottom-2 bottom-[1px] xl:left-2 left-[0.5px] xl:p-4 p-2 bg-white rounded-xl z-50 border">
     <a href="https://www.trustindex.io/reviews/clinique-des-marques.fr?lang=fr" target="_blank">
       <div class="flex flex-col gap-2 items-center">
         <NuxtImg src="./images/google.png" class="xl:w-6 w-5" />
@@ -26,6 +20,16 @@ import Footer from "~/components/Main/Footer.vue";
       </div>
     </a>
   </div>
+
+  <Navbar class="pt-2"/>
+
+  <div class="background"></div>
+  <div class="shape1"></div>
+  <div class="shape2"></div>
+  <div class="mt-52 contenu">
+    <slot />
+  </div>
+
 
   <Footer />
 

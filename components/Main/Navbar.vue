@@ -16,7 +16,7 @@
           |
           <NuxtLink to="#contact" >Blog</NuxtLink>
         </div>
-        <UButton class="bg-purple rounded-xl xl:text-md text-[10px]"
+        <UButton class="bg-purple rounded-xl xl:text-[14px] text-[10px]"
                  trailing-icon="i-lucide-arrow-right" >
           Travailler avec nous
         </UButton>

@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   pages: true,
-  modules: ['@nuxt/image', '@nuxt/ui', 'nuxt-marquee', '@vueuse/motion/nuxt'],
+  modules: ['@nuxt/image', '@nuxt/ui', 'nuxt-marquee', '@vueuse/motion/nuxt','@hypernym/nuxt-gsap'],
   gsap: {
     composables: true,
     provide: false,
