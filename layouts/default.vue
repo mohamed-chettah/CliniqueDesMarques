@@ -14,10 +14,10 @@ import Footer from "~/components/Main/Footer.vue";
     <slot />
   </div>
 
-  <div class="fixed md:bottom-2 bottom-[1px] md:left-2 left-[0.5px] md:p-4 p-2 bg-white rounded-xl z-50 border">
+  <div class="fixed md:bottom-2 bottom-[1px] xl:left-2 left-[0.5px] xl:p-4 p-2 bg-white rounded-xl z-50 border">
     <a href="https://www.trustindex.io/reviews/clinique-des-marques.fr?lang=fr" target="_blank">
       <div class="flex flex-col gap-2 items-center">
-        <NuxtImg src="./images/google.png" class="md:w-6 w-5" />
+        <NuxtImg src="./images/google.png" class="xl:w-6 w-5" />
         <div class="flex flex-col">
           <div v-for="n in 5" :key="n">
             <UIcon name="i-mdi-star" class="text-yellow-500"/>
@@ -28,8 +28,6 @@ import Footer from "~/components/Main/Footer.vue";
   </div>
 
   <Footer />
-
-<!--  TODO BANDE HORIZONTAL AVIS GOOGLE TRUSTINDEX-->
 
 </template>
 

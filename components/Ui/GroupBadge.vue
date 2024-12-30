@@ -6,7 +6,7 @@ const props = defineProps({
 
 <template>
   <div class="flex gap-1" >
-    <UBadge v-for="badge in listBadge" class="bg-beige text-black">{{ badge }}</UBadge>
+    <UBadge v-for="badge in listBadge" class="xl:text-md text-[10px] bg-beige text-black">{{ badge }}</UBadge>
   </div>
 </template>
 

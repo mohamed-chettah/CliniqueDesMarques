@@ -6,7 +6,7 @@ import Clients from "~/components/Hero/Clients.vue";
 <template>
 
   <div class="text-center flex flex-col gap-5">
-    <h1 class="xl:text-7xl text-5xl antialiased tracking-wide font-semibold leading-tight">L’Agence de <span class="text-purple">Branding</span>  et <br> de <span class="text-purple">Communication </span>  à Lyon.</h1>
+    <h1 class="xl:text-7xl md:text-5xl text-4xl antialiased tracking-wide font-semibold leading-tight">L’Agence de <span class="text-purple">Branding</span>  et <br> de <span class="text-purple">Communication </span>  à Lyon.</h1>
 
     <p>
       Nous donnons de la personnalité aux entreprises. Elles performent. Leurs clients adorent.

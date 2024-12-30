@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss'
 export default <Partial<Config>>{
+  darkMode: ['variant', '&:not(.light *)'],
   theme: {
     colors: {
       'purples-100': '#907af7',

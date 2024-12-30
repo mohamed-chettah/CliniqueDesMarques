@@ -9,14 +9,14 @@ const props = defineProps<{
 <template>
   <div class="bg-gradient-to-r from-[#EFECFE] to-purple-100 rounded-xl p-6 border">
     <div class="flex justify-between items-center">
-      <h3 class="font-bold xl:text-xl text-md">{{ title }}</h3>
-      <div class="rounded-full bg-white border-[2px] border-beige flex items-center p-4">
-        <UIcon :name="icon" class="text-4xl text-purple" size="2xl" />
+      <h3 class="font-bold xl:text-xl md:text-md text-sm ">{{ title }}</h3>
+      <div class="rounded-full bg-white border-[2px] border-beige flex items-center xl:p-4 p-3">
+        <UIcon :name="icon" class="xl:text-4xl text-2xl text-purple" />
       </div>
     </div>
 
     <div class="bg-white p-6 rounded-xl flex flex-col gap-4 mt-8 border-[2px] border-beige">
-      <p class="text-sm">{{ description }}</p>
+      <p class="md:text-sm text-xs">{{ description }}</p>
     </div>
 
   </div>
