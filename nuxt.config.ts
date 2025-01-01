@@ -13,4 +13,7 @@ export default defineNuxtConfig({
       motionPath: true,
     },
   },
+  colorMode: {
+    preference: 'light'
+  }
 })
