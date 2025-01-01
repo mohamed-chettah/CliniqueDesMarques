@@ -12,7 +12,7 @@ export default <Partial<Config>>{
         'purples-100': '#907af7',
         'purples-200': '#5e1dd5',
         'test': '#6716DE',
-        'titan-white': {
+        'titan': {
           '50': '#f5f3ff',
           '100': '#efecfe',
           '200': '#dcd6fe',

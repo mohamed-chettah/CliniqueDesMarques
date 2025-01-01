@@ -16,12 +16,9 @@ useHead({
     class: 'nuxt-ui-scrollbars',
   },
 });
+// For Nuxt 3
+definePageMeta({
+  colorMode: 'light',
+})
 
-onMounted(
-    () => {
-      if(localStorage.getItem('nuxt-color-mode') != 'light') {
-        localStorage.setItem('nuxt-color-mode', 'light')
-      }
-    }
-)
 </script>

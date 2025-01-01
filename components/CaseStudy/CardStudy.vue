@@ -31,11 +31,11 @@ const props = defineProps ({
 
         <h3 class="md:text-2xl text-xl font-bold mt-2 absans">{{ title }}</h3>
 
-        <p class="tracking-wider text-md text-sm">
+        <p class="tracking-wider text-md sm:text-sm text-xs">
           {{ description1 }}
         </p>
 
-        <p class="tracking-wider text-md text-sm">
+        <p class="tracking-wider text-md sm:text-sm text-xs">
           {{ description2 }}
         </p>
 

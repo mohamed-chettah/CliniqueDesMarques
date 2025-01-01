@@ -25,7 +25,7 @@ import WhoWeAre from "~/components/WhoWeAre/WhoWeAre.vue";
 
   <GroupCaseStudy />
 
-  <div class="containers">
+  <div class="containers ">
     <Cta />
 
     <Testimonial />

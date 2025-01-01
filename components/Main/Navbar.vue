@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="z-20 fixed right-0 top-5 left-0 rounded-xl bg-white mx-auto lg:w-[80%] sm:w-[90%] w-[70%] border">
+  <div class="z-20 fixed right-0 top-5 left-0 rounded-xl bg-white sm:mx-auto mx-5 lg:w-[80%] sm:w-[90%]  border">
     <div class="flex justify-center xl:gap-52 md:gap-24 gap-6 items-center py-3">
       <NuxtImg class="lg:w-36 w-24" src="./images/Logo-la-clinique-dm.svg" />
       <div class="flex xl:gap-10 gap-6 items-center">

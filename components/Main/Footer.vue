@@ -92,7 +92,7 @@ const product_navigation = [
 
 <template>
   <footer
-      class="flex flex-col p-10 mt-20 bg-[url('/images/image-mesh-gradient.png')] bg-cover  bg-no-repeat text-white"
+      class="flex flex-col p-10 mt-20 bg-[url('/images/image-mesh-gradient-3.png')] bg-cover bg-no-repeat text-white"
   >
     <div class="mx-auto container relative z-10 grid w-full grid-cols-12 gap-y-4 lg:gap-y-0">
       <div
@@ -101,7 +101,7 @@ const product_navigation = [
         <span
             class="text-dark-950 dark:text-dark-50/50 absans inline-block w-full text-lg font-medium md:w-1/2"
         >
-          La Clinique Des Marques
+          La Clinique des marques
         </span>
         <p
             class="text-dark-950/50 dark:text-dark-50/50 font-inter inline-block w-full text-sm md:w-1/2"

@@ -12,14 +12,12 @@ const props = defineProps({
     <UCollapsible class="flex flex-col gap-4" :defaultOpen="faq.open">
       <UButton
           @click="faq.open = !faq.open"
-          class="text-black md:text-sm text-xs flex cursor-pointer items-center justify-between pb-2"
+          class="text-black md:text-sm  font-medium text-xs flex cursor-pointer items-center justify-between pb-2"
           :label="faq.question"
-          color="neutral"
           variant="link"
-          block
       >
         <template #trailing>
-          <UIcon class="text-purple font-semibold"
+          <UIcon class="text-purple font-semibold text-xl"
               :name="faq.open ? 'i-heroicons-minus' : 'i-heroicons-plus'"
           />
         </template>

@@ -8,12 +8,12 @@ const stats = [
 </script>
 
 <template>
-  <section class="flex gap-4 mt-12">
+  <section class="flex md:flex-row flex-col gap-4 sm:mt-12 mt-5">
     <!-- Boucle sur les statistiques -->
     <div v-for="(stat, index) in stats" :key="index" class="flex items-center gap-4">
       <div class="flex flex-col gap-2">
-        <h4 class="text-xl font-bold text-purple">{{ stat.value }}</h4>
-        <p class="text-xs">{{ stat.label }}</p>
+        <h4 class="lg:text-xl text-lg font-bold text-purple">{{ stat.value }}</h4>
+        <p class="lg:text-xs text-[10px]">{{ stat.label }}</p>
       </div>
       <!-- Ajout de la ligne séparatrice sauf pour le dernier élément -->
       <hr

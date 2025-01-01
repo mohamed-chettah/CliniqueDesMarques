@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-dark-50 dark:bg-dark-950 w-full px-4 mt-32 ">
+  <div class="bg-dark-50 dark:bg-dark-950 w-full px-4 mt-10  ">
     <UContainer>
       <div class="flex flex-col">
         <h2 class="font-semibold">FAQ</h2>
@@ -33,19 +33,19 @@ import CollapseQuestion from "~/components/FaqSection/CollapseQuestion.vue";
 const firstQuestion = ref([
   {
     question: "Qu'est-ce qu'une agence de branding et " +
-        "\n comment peut-elle aider mon entreprise à Lyon ?",
+        "comment peut-elle aider mon entreprise à Lyon ?",
     answer: "Une agence de branding à Lyon est spécialisée dans la création et le développement de l’identité de marque. Nous accompagnons les entreprises lyonnaises dans la construction de leur plateforme de marque, la définition de leur positionnement, la création de leur identité visuelle (logo, charte graphique) et la construction d’une image de marque cohérente sur tous les supports de communication.",
     open: false,
   },
   {
     question: "Quels services propose " +
-        "\n votre agence de branding à Lyon ?",
+        "votre agence de branding à Lyon ?",
     answer: "Notre agence lyonnaise propose une gamme complète de services :  Audit de marque et positionnement stratégique, Création d’identité visuelle (logo, charte graphique), Design d’emballage et packaging, Stratégie de communication, Branding digital, Naming et identité verbale, Activation de marque sur le territoire lyonnais.",
     open: false,
   },
   {
     question: "Pourquoi choisir une agence de " +
-        "\n branding locale à Lyon ?",
+        "branding locale à Lyon ?",
     answer: "Travailler avec une agence de branding basée à Lyon présente plusieurs avantages : Une parfaite connaissance du tissu économique local, La possibilité de rencontres régulières en présentiel, Une compréhension fine des spécificités du marché lyonnais, Un réseau solide de partenaires locaux, Une réactivité accrue grâce à la proximité géographique.",
     open: false,
   },
@@ -65,7 +65,7 @@ const firstQuestion = ref([
 const secondQuestion = ref([
   {
     question: "Travaillez-vous avec des entreprises " +
-        "\n en dehors de Lyon ?",
+        "en dehors de Lyon ?",
     answer: "Bien que basés à Lyon, nous accompagnons des entreprises dans toute la France. Notre expertise locale s’étend naturellement sur le marché Français, tout en maintenant la même qualité de service et de suivi.",
     open: false,
   },
@@ -76,7 +76,7 @@ const secondQuestion = ref([
   },
   {
     question: "Comment débuter une collaboration " +
-        "\n avec votre agence de branding ?",
+        "avec votre agence de branding ?",
     answer: "Contactez-nous par téléphone ou via notre formulaire de contact. Nous organisons une première réunion en visio ou dans nos locaux à Lyon. Nous vous envoyons une proposition détaillée sous 48h. Le projet démarre dès validation du devis.",
     open: false,
   },

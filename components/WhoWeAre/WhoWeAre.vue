@@ -5,7 +5,7 @@ import IndicatorNumbers from "~/components/WhoWeAre/IndicatorNumbers.vue";
 
 <template>
 
-  <UCard class="bg-beige xl:mx-0 mx-10 p-4 mt-32">
+  <UCard class="bg-beige xl:mx-0 mx-10 sm:p-4 p-0 mt-32">
     <UContainer>
       <div class="flex flex-col">
         <h2 class="font-semibold ">A propos</h2>
@@ -14,7 +14,7 @@ import IndicatorNumbers from "~/components/WhoWeAre/IndicatorNumbers.vue";
         </h3>
 
         <div class="flex xl:flex-row flex-col gap-10 mt-10">
-          <div class="text-sm flex flex-col gap-5">
+          <div class="sm:text-sm text-xs flex flex-col gap-5">
             <p >
               Notre aventure a commencé avec le branding, mais notre ambition allait bien au-delà de la simple création de marques. Aujourd’hui, nous sommes une agence créative spécialisée dans l’accompagnement des TPE/PME et ETI, les aidant à se faire connaître et à renforcer leur attractivité grâce à une communication efficace.
               <br>
@@ -27,7 +27,7 @@ import IndicatorNumbers from "~/components/WhoWeAre/IndicatorNumbers.vue";
             <IndicatorNumbers />
           </div>
 
-        <NuxtImg src="./images/Grayscale Workspace Collaboration.jpeg" class="rounded-xl xl:h-1/2 xl:w-1/2" />
+        <NuxtImg src="./images/Grayscale Workspace Collaboration.jpeg" class="rounded-xl xl:h-1/2 xl:w-1/2 w-full h-full" />
         </div>
       </div>
     </UContainer>
