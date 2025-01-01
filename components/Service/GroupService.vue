@@ -49,13 +49,13 @@ const secondService = [
 
     <section class="flex flex-col gap-5 my-10">
 
-      <div class="flex xl:flex-row gap-5 flex-col">
+      <div class="flex lg:flex-row gap-5 flex-col">
         <div v-for="service in firstService">
           <CardService :title="service.title" :description="service.description" :icon="service.icon" />
         </div>
       </div>
 
-      <div class="flex xl:flex-row gap-5 flex-col">
+      <div class="flex lg:flex-row gap-5 flex-col">
         <div v-for="service in secondService">
           <CardService :title="service.title" :description="service.description" :icon="service.icon" />
         </div>

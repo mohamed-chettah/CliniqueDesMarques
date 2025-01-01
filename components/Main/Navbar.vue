@@ -2,6 +2,7 @@
 
 
 
+import ButtonCta from "~/components/Ui/ButtonCta.vue";
 </script>
 
 <template>
@@ -18,10 +19,8 @@
           |
           <NuxtLink to="#contact" >FAQ</NuxtLink>
         </div>
-        <UButton class="bg-purple rounded-xl xl:text-[14px] text-[10px]"
-                 trailing-icon="i-lucide-arrow-right" >
-          Travailler avec nous
-        </UButton>
+
+        <ButtonCta class="xl:text-[14px] text-[10px]" size="" to="#contact" label="          Travailler avec nous" trailing-icon="i-lucide-arrow-right"/>
       </div>
     </div>
   </div>

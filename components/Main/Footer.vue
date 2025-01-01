@@ -1,79 +1,20 @@
 
 <script setup lang="ts">
-const navigation = [
-  {
-    label: "Services",
-    links: [
-      {
-        label: "Development",
-        link: "#",
-      },
-      {
-        label: "Design",
-        link: "#",
-      },
-      {
-        label: "Mobile Apps",
-        link: "#",
-      },
-      {
-        label: "Imagene Data",
-        link: "#",
-      },
-    ],
-  },
-];
 
-const other_navigation = [
+const product_navigation = [
   {
-    label: "Company",
+    label: "Navigation",
     links: [
-      {
-        label: "About",
-        link: "#",
-      },
-      {
-        label: "Website",
-        link: "#",
-      },
-      {
-        label: "Brand",
-        link: "#",
-      },
-      {
-        label: "Gallery",
-        link: "#",
-      },
-      {
-        label: "Blog",
-        link: "#",
-      },
       {
         label: "Services",
         link: "#",
       },
       {
-        label: "Careers",
-        link: "#",
-      },
-    ],
-  },
-];
-
-const product_navigation = [
-  {
-    label: "Product",
-    links: [
-      {
-        label: "Overview",
+        label: "Etudes de cas",
         link: "#",
       },
       {
-        label: "Features",
-        link: "#",
-      },
-      {
-        label: "Pricing",
+        label: "Avis Clients",
         link: "#",
       },
       {
@@ -81,7 +22,7 @@ const product_navigation = [
         link: "#",
       },
       {
-        label: "Updates",
+        label: "Mention légales",
         link: "#",
       },
     ],
@@ -92,7 +33,7 @@ const product_navigation = [
 
 <template>
   <footer
-      class="text-white flex flex-col p-10 mt-20 bg-[url('/images/image-mesh-gradient-3.png')] bg-cover bg-no-repeat text-white"
+      class="footer text-white flex flex-col p-10 mt-20 bg-[url('/images/image-mesh-gradient-3.png')] bg-cover bg-no-repeat text-white"
   >
     <div class="mx-auto container relative z-10 grid w-full grid-cols-10 gap-y-4 lg:gap-y-0">
       <div
@@ -104,10 +45,13 @@ const product_navigation = [
           La Clinique des marques
         </span>
         <p
-            class="text-dark-950/50 dark:text-dark-50/50 font-inter inline-block w-full text-sm md:w-1/2"
+            class="text-white font-inter inline-block w-full text-sm md:w-1/2"
         >
-          Lorem ipsum dolor sit amet <br />
-          consectetur adipisicing elit.
+          Nous donnons de la personnalité aux entreprises.
+          <br />
+          Elles performent.
+          <br />
+          Leurs clients adorent.
         </p>
         <div
             class="text-dark-950/50 dark:text-dark-50/50 flex items-center justify-start gap-x-4"
@@ -131,30 +75,7 @@ const product_navigation = [
         </div>
       </div>
       <ul
-          class="col-span-full flex w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
-      >
-        <template v-for="(nav, index) in navigation" :key="index">
-          <li
-              class="text-white font-inter mb-3 text-base font-medium capitalize"
-          >
-            {{ nav.label }}
-          </li>
-          <li v-for="(inner_link, _index) in nav.links" :key="_index">
-            <UButton
-                :to="inner_link.link"
-                target="_blank"
-                variant="link"
-                color="neutral"
-                size="lg"
-                class="p-0"
-            >
-              {{ inner_link.label }}
-            </UButton>
-          </li>
-        </template>
-      </ul>
-      <ul
-          class="col-span-full flex w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
+          class="col-span-4 flex justify-end w-full flex-col gap-y-2 md:col-span-6 lg:col-span-2 xl:col-span-1"
       >
         <template v-for="(nav, index) in product_navigation" :key="index">
           <li
@@ -176,7 +97,7 @@ const product_navigation = [
         </template>
       </ul>
       <div
-          class="gap-1 text-white border-dark-950/10 dark:border-dark-50/10 text-dark-950/50 dark:text-dark-50/50 col-span-full mt-4 mb-2 flex items-center justify-center border-t pt-4 text-sm"
+          class="gap-1 xl:text-white text-black border-dark-950/10 dark:border-dark-50/10 text-dark-950/50 dark:text-dark-50/50 col-span-full mt-4 mb-2 flex items-center justify-center border-t pt-4 text-sm"
       >
        <p>© Made with ❤️ by </p>  <a class="text-[#F0BF6C]" href="https://www.mc-studio.eu/"> MC Studio</a>
       </div>

@@ -63,7 +63,6 @@ const listProduct = [
 
 <template>
   <div class="flex my-16 rounded-2xl mx-auto">
-    <div class=" bg-white blur-lg text-transparent ">ll</div>
     <NuxtMarquee
         direction="right"
         gradientColor="var(--color-dark-50)"

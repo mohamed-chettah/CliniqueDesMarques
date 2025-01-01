@@ -1,31 +1,4 @@
-<template>
-  <div class="bg-dark-50 dark:bg-dark-950 w-full px-4 mt-10  ">
-    <UContainer>
-      <div class="flex flex-col">
-        <h2 class="font-semibold">FAQ</h2>
-        <h3 class="md:text-3xl text-2xl font-bold mt-2 text-purple">
-          Les Questions qu'on nous pose le plus souvent
-        </h3>
-      </div>
 
-
-      <div class="mt-5 h-full flex xl:flex-row flex-col gap-3">
-        <div>
-          <template v-for="(faq, index) in firstQuestion" :key="index">
-            <CollapseQuestion :faq="faq" />
-          </template>
-        </div>
-
-        <div>
-          <template v-for="(faq, index) in secondQuestion" :key="index">
-            <CollapseQuestion :faq="faq" />
-          </template>
-        </div>
-
-      </div>
-    </UContainer>
-  </div>
-</template>
 
 <script setup lang="ts">
 import CollapseQuestion from "~/components/FaqSection/CollapseQuestion.vue";
@@ -91,4 +64,53 @@ const secondQuestion = ref([
     open: false,
   },
 ])
+
+const initial = ref({
+  y: 100,
+  opacity: 0,
+})
+
+const enter = ref({
+  y: 0,
+  opacity: 1,
+})
 </script>
+
+
+<template>
+  <div v-motion="{
+      initial: {
+        y: 100,
+        opacity: 0
+      },
+      enter: {
+        y: 0,
+        opacity: 1
+      }
+    }" class="bg-dark-50 dark:bg-dark-950 w-full px-4 mt-32  ">
+    <UContainer>
+      <div class="flex flex-col">
+        <h2 class="font-semibold">FAQ</h2>
+        <h3 class="md:text-3xl text-2xl font-bold mt-2 text-purple">
+          Les Questions qu'on nous pose le plus souvent
+        </h3>
+      </div>
+
+
+      <div class="mt-5 h-full flex xl:flex-row flex-col gap-3">
+        <div>
+          <template v-for="(faq, index) in firstQuestion" :key="index">
+            <CollapseQuestion :faq="faq" />
+          </template>
+        </div>
+
+        <div>
+          <template v-for="(faq, index) in secondQuestion" :key="index">
+            <CollapseQuestion :faq="faq" />
+          </template>
+        </div>
+
+      </div>
+    </UContainer>
+  </div>
+</template>

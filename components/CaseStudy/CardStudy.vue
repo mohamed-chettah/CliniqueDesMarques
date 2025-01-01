@@ -48,7 +48,7 @@ const props = defineProps ({
           </div>
         </div>
 
-        <UButton class="mt-5 bg-black rounded-xl w-40 hover:bg-white hover:text-black xl:text-md text-xs" trailing-icon="i-lucide-arrow-right" >Réserver un appel</UButton>
+        <UButton to="#contact" class="mt-5 bg-black cursor-pointer rounded-xl w-40 hover:bg-white hover:text-black xl:text-md text-xs" trailing-icon="i-lucide-arrow-right" >Réserver un appel</UButton>
       </div>
     </div>
 

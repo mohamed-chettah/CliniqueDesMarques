@@ -12,7 +12,7 @@ const stats = [
     <!-- Boucle sur les statistiques -->
     <div v-for="(stat, index) in stats" :key="index" class="flex items-center gap-4">
       <div class="flex flex-col gap-2">
-        <h4 class="lg:text-xl text-lg font-bold text-purple">{{ stat.value }}</h4>
+        <h4 class="xl:text-3xl lg:text-xl text-lg font-semibold text-purple">{{ stat.value }}</h4>
         <p class="lg:text-xs text-[10px]">{{ stat.label }}</p>
       </div>
       <!-- Ajout de la ligne séparatrice sauf pour le dernier élément -->

@@ -10,8 +10,8 @@ onMounted(() => {
     scrollTrigger:{
       trigger:'.case-study',
       pinnedContainer: ".main",
-      start:'top 40%',
-      end : 'bottom 20%',
+      start:'top 90%',
+      end : 'bottom 10%',
       toggleActions: 'play reset play reset',
     }
   })
