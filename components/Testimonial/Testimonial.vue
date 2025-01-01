@@ -59,21 +59,12 @@ const testimonials = shallowRef([
 
 <template>
 
-  <NuxtMarquee
-      direction="up"
-      gradientColor="var(--color-dark-50)"
-  >
-  </NuxtMarquee>
-
     <div class="xl:mx-0 mx-10 mt-10">
 
-      <div class="border mt-10 p-10 bg-[url('/images/abstract-purple.jpeg')]  bg-cover bg-no-repeat rounded-xl">
+      <div class="border mt-10 p-10 bg-[url('/images/abstract-purple.jpeg')] bg-cover bg-no-repeat rounded-xl">
 
         <div class="flex my-16 rounded-2xl mx-auto">
-          <NuxtMarquee
-              direction="right"
-              gradientColor="var(--color-dark-50)"
-          >
+
             <div class="font-inter mt-8 grid grid-cols-12 gap-4 p-4 md:mt-24">
 
               <template v-for="(col, index) in testimonials" :key="index">
@@ -83,7 +74,7 @@ const testimonials = shallowRef([
                 >
                   <template v-for="(testimonial, _index) in col" :key="_index">
                     <div
-                        class=" bg-beige border rounded-xl p-8 transition-all duration-300 ease-in-out"
+                        class=" bg-beige  border rounded-xl p-8 transition-all duration-300 ease-in-out"
                     >
                       <p
                           class="text-dark-950/80 dark:text-dark-50/60 text-base whitespace-pre-line font-normal"
@@ -107,7 +98,7 @@ const testimonials = shallowRef([
               </template>
 
             </div>
-          </NuxtMarquee>
+
         </div>
 
       </div>
