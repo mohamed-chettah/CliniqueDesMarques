@@ -5,12 +5,15 @@ import SliderProduct from "~/components/Product/SliderProduct.vue";
 import GroupService from "~/components/Service/GroupService.vue";
 import GroupCaseStudy from "~/components/CaseStudy/GroupCaseStudy.vue";
 import Cta from "~/components/Ui/Cta.vue";
+import Faq from "~/components/FaqSection/Faq.vue";
+import WhoWeAre from "~/components/WhoWeAre/WhoWeAre.vue";
 
 
 </script>
 
 <template>
-  <div class=" 2xl:mx-auto xl:mx-20 sm:mx-auto">
+
+  <div class="containers">
 
     <MainHero />
 
@@ -22,9 +25,17 @@ import Cta from "~/components/Ui/Cta.vue";
 
   <GroupCaseStudy />
 
-  <div class="container mx-auto">
+  <div class="containers">
     <Cta />
+
+    <Testimonial />
+
+    <Faq />
+
+    <WhoWeAre />
   </div>
+
+
 
 </template>
 

@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     provide: false,
     extraPlugins: {
       scrollTrigger: true,
-      motionPath: true
+      motionPath: true,
     },
   },
 })

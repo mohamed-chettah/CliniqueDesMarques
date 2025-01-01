@@ -15,24 +15,6 @@
   font-style: normal;
 }
 
-
-@theme {
-  --font-sans: 'Public Sans', sans-serif;
-
-  --breakpoint-3xl: 1920px;
-
-  --color-green-50: #EFFDF5;
-  --color-green-100: #D9FBE8;
-  --color-green-200: #B3F5D1;
-  --color-green-300: #75EDAE;
-  --color-green-400: #00DC82;
-  --color-green-500: #00C16A;
-  --color-green-600: #00A155;
-  --color-green-700: #007F45;
-  --color-green-800: #016538;
-  --color-green-900: #0A5331;
-  --color-green-950: #052E16;
-}
 /* ---------------------------------------------------------------------- Global  ----------------------------------------------------------------------*/
 
 @layer base {
@@ -42,6 +24,10 @@
 
   .text-purple {
     @apply text-[#6716DE]
+  }
+
+  .border-purple {
+    @apply border-[#6716DE]
   }
 
   .text-beige {
@@ -59,6 +45,10 @@
   .bg-purple {
     @apply bg-[#6716DE]
   }
+
+  .containers {
+    @apply 2xl:container 2xl:mx-auto xl:mx-20 sm:mx-auto
+  }
 }
 
 :root {
@@ -75,6 +65,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-color: whitesmoke;
+  width: 100%;
 }
 
 h1,h2,.absans{

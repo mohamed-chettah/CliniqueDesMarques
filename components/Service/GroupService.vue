@@ -32,8 +32,8 @@ const secondService = [
     "icon": "i-lucide-video"
   },
   {
-    "title": "Création de site internet",
-    "description": "Nous concevons des sites modernes et performants pour valoriser votre marque et offrir une expérience utilisateur optimale.",
+    "title": "Webdesign",
+    "description": "De votre site internet à la création de vos contenus pour les réseaux sociaux, Nous vous accompagnons pour développer votre attractivité sur le web.",
     "icon": "i-lucide-screen-share"
   }
 ];
