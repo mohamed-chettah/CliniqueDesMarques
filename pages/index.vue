@@ -10,7 +10,7 @@ import Cta from "~/components/Ui/Cta.vue";
 </script>
 
 <template>
-  <div class="container mx-auto ">
+  <div class=" 2xl:mx-auto xl:mx-20 sm:mx-auto">
 
     <MainHero />
 
@@ -24,8 +24,6 @@ import Cta from "~/components/Ui/Cta.vue";
 
   <div class="container mx-auto">
     <Cta />
-
-    <GroupService class="mt-96" />
   </div>
 
 </template>

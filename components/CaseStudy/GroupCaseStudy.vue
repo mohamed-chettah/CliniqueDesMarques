@@ -78,7 +78,7 @@ const listCaseStudy = [
 
   <div class="case-study bg-purple text-white mt-32 py-20">
 
-    <div class="container mx-auto">
+    <div class="2xl:mx-auto xl:mx-20 ">
       <div class="xl:mx-0 mx-10 ">
         <h2 class="font-semibold">Etudes de cas</h2>
         <h3 class="md:text-3xl text-2xl font-bold mt-2">Des études de cas inspirantes pour révéler le potentiel de votre marque.</h3>

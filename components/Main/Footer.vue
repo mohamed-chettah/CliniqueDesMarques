@@ -202,13 +202,8 @@ const product_navigation = [
       <div
           class="gap-1 text-black border-dark-950/10 dark:border-dark-50/10 text-dark-950/50 dark:text-dark-50/50 col-span-full mt-4 mb-2 flex items-center justify-center border-t pt-4 text-sm"
       >
-       <p>© Made with ❤️ by </p>  <a href="https://www.mc-studio.eu/"> MC Studio</a>
+       <p>© Made with ❤️ by </p>  <a class="text-[#F0BF6C]" href="https://www.mc-studio.eu/"> MC Studio</a>
       </div>
-    </div>
-    <div class="absolute -bottom-96 left-1/2 -translate-x-1/2">
-      <div
-          class="from-primary-100 to-primary-300 dark:from-primary-500/30 dark:to-primary-300/30 size-[620px] rounded-full bg-gradient-to-br opacity-50 blur-3xl"
-      />
     </div>
   </footer>
 </template>
