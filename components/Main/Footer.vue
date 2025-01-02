@@ -33,7 +33,7 @@ const product_navigation = [
 
 <template>
   <footer
-      class="footer text-white flex flex-col p-10 mt-20 bg-[url('/images/image-mesh-gradient-3.png')] bg-cover bg-no-repeat text-white"
+      class="footer text-white flex flex-col p-10 bg-purple text-white border-t "
   >
     <div class="mx-auto container relative z-10 grid w-full grid-cols-10 gap-y-4 lg:gap-y-0">
       <div
@@ -97,7 +97,7 @@ const product_navigation = [
         </template>
       </ul>
       <div
-          class="gap-1 xl:text-white text-black border-dark-950/10 dark:border-dark-50/10 text-dark-950/50 dark:text-dark-50/50 col-span-full mt-4 mb-2 flex items-center justify-center border-t pt-4 text-sm"
+          class="gap-1 col-span-full mt-8 mb-2 flex items-center justify-center border-t pt-4 text-sm"
       >
        <p>© 2024 - Made by </p>  <a class="text-[#F0BF6C]" href="https://www.mc-studio.eu/"> MC Studio</a>
       </div>

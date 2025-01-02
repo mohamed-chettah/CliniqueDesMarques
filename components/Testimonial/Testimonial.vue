@@ -2,113 +2,100 @@
 const testimonials = shallowRef([
   [
     {
-      name: "Emily Johnson",
-      username: "@emilyj",
-      text: "This service transformed my business. The tools" +
-          "\n  provided are easy to use and incredibly effective. Highly recommend!",
+      name: "Laura Larivière",
+      username: "@laural",
+      role: "Fondatrice de Pé Pit'",
+      text: "La Clinique des Marques a accompagné ma start up Pé Pit' dans l'élaboration et la conception de son Branding. Plus qu'un logo, c'est un réel accompagnement dont nous avons bénéficié ! Les mots qui définissent cette agence : Écoute, Pragmatique, Bienveillance & Vision business. Au-delà de l'aspect graphique, nous avons aussi repositionné toute la promesse de la marque qui a directement impacté notre business model (pour le mieux). Je recommande !",
     },
-    //Add more data
+    // Ajoutez d'autres avis ici
   ],
   [
     {
-      name: "Laura Fernández",
-      username: "@laurafern",
-      text: "La mejor herramienta que he usado para crear " +
-          "\n landing pages. Es rápida, confiable, y el equipo de soporte es muy útil.",
+      name: "Albin Quicampoix",
+      username: "@albinq",
+      role: "Membre de l'équipe Iad Lyon",
+      text: "Nous avons eu l'opportunité d'être accompagnés par la Clinique des Marques, en particulier par Mehdi, dans le processus de création de nos valeurs, notre raison d'être et notre mission au sein de notre équipe chez Iad. Les ateliers collectifs ont été des moments clés, où Mehdi a su nous guider pour extraire l'essentiel et faciliter un accord collectif sur ces éléments fondamentaux. Son expertise et sa méthodologie ont grandement contribué à façonner notre identité. Nous sommes reconnaissants pour cette collaboration enrichissante. Je recommande à 100% ! Un grand merci à Mehdi de la part des Créateurs de Bons Moments chez Iad.",
     },
-    //Add more data
+    // Ajoutez d'autres avis ici
   ],
   [
     {
-      name: "David Wilson",
-      username: "@davidw",
-      text: "Exceeded all my expectations! The UI is beautiful" +
-          "\n  and the features are exactly what I needed for my project.",
+      name: "Alain Humbert",
+      username: "@alainh",
+      role: "Responsable chez ÉcloHésion",
+      text: "Nous avons travaillé avec La Clinique des Marques sur la refonte complète de nos marques et de notre identité. J'ai été pleinement satisfait de leur réactivité et de leur créativité.",
     },
-    //Add more data
+    // Ajoutez d'autres avis ici
   ],
   [
     {
-      name: "Sophie Li",
-      username: "@sophieli",
-      text: "I've been using this service for a few months now and I'm very happy with " +
-          "\n the results. It's easy to use and the support team is great.",
+      name: "Marie Santos",
+      username: "@maries",
+      role: "Entrepreneuse",
+      text: "Très bonne expérience avec La Clinique des Marques ! Mehdi et son équipe ont su comprendre mes besoins et m’accompagner à chaque étape de mise en place. Le tout avec réactivité et implication !",
     },
-    //Add more data
+    // Ajoutez d'autres avis ici
   ],
   [
     {
-      name: "John Smith",
-      username: "@johnsmith",
-      text: "I've tried a few different services and this one is by far the best. " +
-          "\n The features are great and the support is top-notch.",
+      name: "Tom Depril Dupre",
+      username: "@tomdd",
+      role: "Client satisfait",
+      text: "Agence très sérieuse et réactive ! Merci Mehdi !",
     },
-    //Add more data
+    // Ajoutez d'autres avis ici
   ],
   [
     {
-      name: "Maria García",
-      username: "@mariag",
-      text: "Me encanta esta herramienta. " +
-          "\n Es fácil de usar y tiene todas las funciones que necesito para mis proyectos. ¡Muy recomendable!",
+      name: "Mouloud Feknous",
+      username: "@mouloudf",
+      role: "Représentant de VETAGRAL",
+      text: "Le travail réalisé pour la société VETAGRAL est très satisfaisant.",
     },
-    //Add more data
-],
+    // Ajoutez d'autres avis ici
+  ],
+  // Ajoutez d'autres groupes d'avis si nécessaire
 ]);
+
 </script>
-
 <template>
-
-    <div class="xl:mx-0 mx-10 mt-10">
-
-      <div class="border mt-10 p-10 bg-[url('/images/abstract-purple.jpeg')] bg-cover bg-no-repeat rounded-xl">
-
+  <div id="testimonials" class="py-16">
+    <div class="xl:mx-0 mx-10">
+      <div class="border mt-10 p-10 bg-[url('/images/celest.jpeg')] bg-cover bg-no-repeat rounded-xl shadow-lg">
         <div class="flex my-16 rounded-2xl mx-auto">
-
-            <div class="font-inter mt-8 grid grid-cols-12 gap-4 p-4 md:mt-24">
-
-              <template v-for="(col, index) in testimonials" :key="index">
-
+          <div class="font-inter mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
+            <template v-for="(col, index) in testimonials" :key="index">
+              <template v-for="(testimonial, _index) in col" :key="_index">
                 <div
-                    class="col-span-full flex h-full flex-col gap-2 even:mt-4 md:col-span-4"
+                    class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
                 >
-                  <template v-for="(testimonial, _index) in col" :key="_index">
-                    <div
-                        class=" bg-beige  border rounded-xl p-8 transition-all duration-300 ease-in-out"
-                    >
-                      <p
-                          class="text-dark-950/80 dark:text-dark-50/60 text-base whitespace-pre-line font-normal"
-                      >
-                        {{ testimonial.text }}
-                      </p>
-                      <div class="mt-20">
-                  <span
-                      class="text-dark-950 dark:text-dark-50 inline-block w-full text-sm font-bold"
-                  >{{ testimonial.name }}</span
+                  <p
+                      class="text-gray-700 text-base whitespace-pre-line font-normal mb-6 leading-relaxed"
                   >
-                        <span
-                            class="text-dark-950/60 dark:text-dark-50/60 inline-block w-full text-sm font-normal"
-                        >{{ testimonial.username }}</span
-                        >
-                      </div>
+                    “{{ testimonial.text }}”
+                  </p>
+                  <div class="mt-6 flex items-center">
+                    <div class="flex flex-col">
+                      <span
+                          class="text-gray-900 text-lg font-bold"
+                      >{{ testimonial.name }}</span>
+                      <span
+                          class="text-gray-500 text-sm font-medium"
+                      >{{ testimonial.role }}</span>
                     </div>
-                  </template>
+                  </div>
                 </div>
-
               </template>
-
-            </div>
-
+            </template>
+          </div>
         </div>
-
       </div>
-
     </div>
-
-
-
+  </div>
 </template>
 
 <style scoped>
-
+html {
+  scroll-behavior: smooth;
+}
 </style>

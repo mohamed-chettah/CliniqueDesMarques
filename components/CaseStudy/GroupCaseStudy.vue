@@ -76,6 +76,10 @@ const listCaseStudy = [
 
 <template>
 
+  <div id="casestudy">
+
+  </div>
+
   <div class="case-study bg-purple text-white mt-32 py-20">
 
     <div class="containers">

@@ -41,7 +41,9 @@ const secondService = [
 </script>
 
 <template>
+  <div id="services">
 
+  </div>
   <div class="xl:mx-0 mx-10 mt-32">
 
     <h2 class="font-semibold ">Services</h2>

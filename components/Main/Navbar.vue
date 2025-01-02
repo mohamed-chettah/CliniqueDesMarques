@@ -10,14 +10,14 @@ import ButtonCta from "~/components/Ui/ButtonCta.vue";
     <div class="flex justify-center xl:gap-52 md:gap-24 gap-6 items-center py-3">
       <NuxtImg class="lg:w-36 w-24" src="./images/Logo-la-clinique-dm.svg" />
       <div class="flex xl:gap-10 gap-6 items-center">
-        <div class="md:flex hidden xl:gap-6 gap-2 xl:text-sm text-xs text-black/70 justify-center text-md">
-          <NuxtLink to="#services">Services</NuxtLink>
+        <div class="md:flex hidden xl:gap-6 gap-2 xl:text-sm text-xs text-black/90 justify-center text-md">
+          <NuxtLink class="hover:font-bold" to="#services">Services</NuxtLink>
           |
-          <NuxtLink to="#services" >Etudes de cas</NuxtLink>
+          <NuxtLink class="hover:font-bold" to="#casestudy" >Etudes de cas</NuxtLink>
           |
-          <NuxtLink to="#contact" >Avis Clients</NuxtLink>
+          <NuxtLink class="hover:font-bold" to="#testimonials">Avis Clients</NuxtLink>
           |
-          <NuxtLink to="#contact" >FAQ</NuxtLink>
+          <NuxtLink class="hover:font-bold" to="#faq" >FAQ</NuxtLink>
         </div>
 
         <ButtonCta class="xl:text-[14px] text-[10px]" size="" to="#contact" label="          Travailler avec nous" trailing-icon="i-lucide-arrow-right"/>

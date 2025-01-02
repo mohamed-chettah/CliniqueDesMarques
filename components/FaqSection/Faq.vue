@@ -78,16 +78,10 @@ const enter = ref({
 
 
 <template>
-  <div v-motion="{
-      initial: {
-        y: 100,
-        opacity: 0
-      },
-      enter: {
-        y: 0,
-        opacity: 1
-      }
-    }" class="bg-dark-50 dark:bg-dark-950 w-full px-4 mt-32  ">
+  <div id="faq">
+
+  </div>
+  <div class="bg-dark-50 dark:bg-dark-950 w-full px-4 mt-32  ">
     <UContainer>
       <div class="flex flex-col">
         <h2 class="font-semibold">FAQ</h2>
