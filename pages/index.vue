@@ -7,6 +7,7 @@ import GroupCaseStudy from "~/components/CaseStudy/GroupCaseStudy.vue";
 import Cta from "~/components/Ui/Cta.vue";
 import Faq from "~/components/FaqSection/Faq.vue";
 import WhoWeAre from "~/components/WhoWeAre/WhoWeAre.vue";
+import TabsContact from "~/components/Contact/TabsContact.vue";
 
 
 </script>
@@ -33,6 +34,8 @@ import WhoWeAre from "~/components/WhoWeAre/WhoWeAre.vue";
     <Faq />
 
     <WhoWeAre />
+
+    <TabsContact />
   </div>
 
 
