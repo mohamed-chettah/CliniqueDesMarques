@@ -1,18 +1,4 @@
 <script setup lang="ts">
-const items = [
-  {
-    label: 'Ecrivez nous un message',
-    description: 'Make changes to your account here. Click save when you\'re done.',
-    icon: 'i-lucide-user',
-    slot: 'account'
-  },
-  {
-    label: 'Prenez Rendez Vous',
-    description: 'Change your password here. After saving, you\'ll be logged out.',
-    icon: 'i-lucide-lock',
-    slot: 'password'
-  }
-]
 
 const state = reactive({
   name: 'Benjamin Canac',
@@ -24,43 +10,43 @@ const state = reactive({
 </script>
 
 <template>
-  <UTabs color="info" :items="items" variant="link" class="p-10 border rounded-xl mt-32 gap-4 w-full" :ui="{ trigger: 'flex-1' }">
-    <template #account="{ item }">
-      <p class="text-[var(--ui-text-muted)] mb-4">
-        {{ item.description }}
-      </p>
 
-      <UForm :state="state" class="flex flex-col gap-4">
-        <UFormField label="Name" name="name">
-          <UInput v-model="state.name" class="w-full" />
-        </UFormField>
-        <UFormField label="Username" name="username">
-          <UInput v-model="state.username" class="w-full" />
-        </UFormField>
+  <div class="text-center mt-32 text-white">
+    <h2 class="font-semibold ">Contact</h2>
+    <h3 class="md:text-3xl text-2xl font-bold mt-2">
+      Prêt à travailler avec nous ?
+    </h3>
+  </div>
 
-        <UButton label="Save changes" type="submit" variant="soft" class="self-end" />
-      </UForm>
-    </template>
+  <div class="flex flex-col border-[1px] border-white gap-5 shadow-2xl p-8 bg-beige rounded-xl mt-5 xl:mx-72 mx-10">
 
-    <template #password="{ item }">
-      <p class="text-[var(--ui-text-muted)] mb-4">
-        {{ item.description }}
-      </p>
+        <UForm :state="state" class="flex flex-col gap-4">
 
-      <UForm :state="state" class="flex flex-col gap-4">
-        <UFormField label="Current Password" name="current" required>
-          <UInput v-model="state.currentPassword" type="password" required class="w-full" />
-        </UFormField>
-        <UFormField label="New Password" name="new" required>
-          <UInput v-model="state.newPassword" type="password" required class="w-full" />
-        </UFormField>
-        <UFormField label="Confirm Password" name="confirm" required>
-          <UInput v-model="state.confirmPassword" type="password" required class="w-full" />
-        </UFormField>
+          <p class="text-bold text-sm">Informations de contact</p>
 
-        <UButton label="Change password" type="submit" variant="soft" class="self-end" />
-      </UForm>
-    </template>
-  </UTabs>
+          <div class="flex gap-4 items-center">
+            <UFormField label="Name" name="name">
+              <UInput v-model="state.name" class="w-full" />
+            </UFormField>
+            <UFormField label="Email" name="username">
+              <UInput v-model="state.username" class="w-full" />
+            </UFormField>
+          </div>
+
+          <UTextarea  name="message" placeholder="Décriver votre projet" class="w-full" />
+
+          <p class="text-sm">Précisez les domaines : </p>
+
+          <div class="flex gap-2 text-purple">
+            <UCheckbox label="Check me" />
+            <UCheckbox label="Check me" />
+            <UCheckbox label="Check me" />
+            <UCheckbox label="Check me" />
+          </div>
+
+          <UButton label="Envoyer un message" type="submit" class="cursor-pointer bg-black hover:bg-black/70 self-center" />
+        </UForm>
+
+  </div>
 </template>
 

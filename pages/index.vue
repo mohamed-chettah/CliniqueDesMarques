@@ -8,6 +8,7 @@ import Cta from "~/components/Ui/Cta.vue";
 import Faq from "~/components/FaqSection/Faq.vue";
 import WhoWeAre from "~/components/WhoWeAre/WhoWeAre.vue";
 import TabsContact from "~/components/Contact/TabsContact.vue";
+import Background from "~/components/Contact/Background.vue";
 
 
 </script>
@@ -33,9 +34,22 @@ import TabsContact from "~/components/Contact/TabsContact.vue";
 
     <Faq />
 
-    <WhoWeAre />
+  </div>
 
-    <TabsContact />
+
+
+  <div class="bg-[#6716DE] mt-32 py-20">
+
+
+      <div class="container mx-auto">
+        <WhoWeAre />
+
+        <TabsContact />
+      </div>
+
+
+
+
   </div>
 
 

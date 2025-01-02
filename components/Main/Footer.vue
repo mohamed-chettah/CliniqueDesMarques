@@ -99,7 +99,7 @@ const product_navigation = [
       <div
           class="gap-1 xl:text-white text-black border-dark-950/10 dark:border-dark-50/10 text-dark-950/50 dark:text-dark-50/50 col-span-full mt-4 mb-2 flex items-center justify-center border-t pt-4 text-sm"
       >
-       <p>© Made with ❤️ by </p>  <a class="text-[#F0BF6C]" href="https://www.mc-studio.eu/"> MC Studio</a>
+       <p>© 2024 - Made by </p>  <a class="text-[#F0BF6C]" href="https://www.mc-studio.eu/"> MC Studio</a>
       </div>
     </div>
   </footer>

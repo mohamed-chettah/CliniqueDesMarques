@@ -5,7 +5,7 @@ import IndicatorNumbers from "~/components/WhoWeAre/IndicatorNumbers.vue";
 
 <template>
 
-  <UCard class="bg-beige xl:mx-0 mx-10 sm:p-4 p-0 mt-32">
+  <UCard class=" bg-beige border xl:mx-0 mx-10 sm:p-4 p-0">
     <UContainer>
       <div class="flex flex-col">
         <h2 class="font-semibold ">A propos</h2>
