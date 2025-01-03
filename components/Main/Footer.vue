@@ -35,7 +35,8 @@ const product_navigation = [
   <footer
       class="footer text-white flex flex-col p-10 bg-purple text-white border-t "
   >
-    <div class="mx-auto container relative z-10 grid w-full grid-cols-10 gap-y-4 lg:gap-y-0">
+    <div class="containers">
+    <div class="relative z-10 grid w-full grid-cols-10 gap-y-4 lg:gap-y-0">
       <div
           class="col-span-full flex flex-col items-start justify-start gap-y-6 lg:col-span-4 xl:col-span-8"
       >
@@ -101,6 +102,7 @@ const product_navigation = [
       >
        <p>© 2024 - Made by </p>  <a class="text-[#F0BF6C]" href="https://www.mc-studio.eu/"> MC Studio</a>
       </div>
+    </div>
     </div>
   </footer>
 </template>

@@ -2,55 +2,54 @@
 const testimonials = shallowRef([
   [
     {
-      name: "Laura Larivière",
-      username: "@laural",
-      role: "Fondatrice de Pé Pit'",
-      text: "La Clinique des Marques a accompagné ma start up Pé Pit' dans l'élaboration et la conception de son Branding. Plus qu'un logo, c'est un réel accompagnement dont nous avons bénéficié ! Les mots qui définissent cette agence : Écoute, Pragmatique, Bienveillance & Vision business. Au-delà de l'aspect graphique, nous avons aussi repositionné toute la promesse de la marque qui a directement impacté notre business model (pour le mieux). Je recommande !",
+      avatar: "/images/avis/antoine-courbon.jpeg",
+      name: "Antoine Courbon",
+      role: "Entrepreneur",
+      text: "Je suis très satisfait de cette agence ! Nous sommes tenus informés tout au long du projet. Toujours réactif et surtout on se sent accompagné et conseillé, exactement ce qu’on attend comme réponse à nos problématiques."
     },
-    // Ajoutez d'autres avis ici
   ],
   [
     {
+      avatar: "/images/avis/albin.jpg",
       name: "Albin Quicampoix",
       username: "@albinq",
       role: "Membre de l'équipe Iad Lyon",
-      text: "Nous avons eu l'opportunité d'être accompagnés par la Clinique des Marques, en particulier par Mehdi, dans le processus de création de nos valeurs, notre raison d'être et notre mission au sein de notre équipe chez Iad. Les ateliers collectifs ont été des moments clés, où Mehdi a su nous guider pour extraire l'essentiel et faciliter un accord collectif sur ces éléments fondamentaux. Son expertise et sa méthodologie ont grandement contribué à façonner notre identité. Nous sommes reconnaissants pour cette collaboration enrichissante. Je recommande à 100% ! Un grand merci à Mehdi de la part des Créateurs de Bons Moments chez Iad.",
+      text:"Je recommande à 100% ! Un grand merci à Mehdi de la part des Créateurs de Bons Moments chez Iad."
     },
     // Ajoutez d'autres avis ici
   ],
   [
     {
-      name: "Alain Humbert",
-      username: "@alainh",
-      role: "Responsable chez ÉcloHésion",
+      avatar: "/images/avis/sophe-rossi.jpeg",
+      name: "Sophie Rossi",
+      role: "Fondatrice d'HedonX",
       text: "Nous avons travaillé avec La Clinique des Marques sur la refonte complète de nos marques et de notre identité. J'ai été pleinement satisfait de leur réactivité et de leur créativité.",
     },
     // Ajoutez d'autres avis ici
   ],
   [
     {
-      name: "Marie Santos",
-      username: "@maries",
-      role: "Entrepreneuse",
-      text: "Très bonne expérience avec La Clinique des Marques ! Mehdi et son équipe ont su comprendre mes besoins et m’accompagner à chaque étape de mise en place. Le tout avec réactivité et implication !",
+      avatar: "/images/avis/guillaume.png",
+      name: "Guillaume Bourdon",
+      role: "Fondateur Second souffle lyon",
+      text: "Nous avons fait intervenir la Clinique des Marques sur le site de notre association second souffle lyon ...c'est une révolution ! positive bien sur ! ils ont bien compris nos besoins et ce sont adaptés à notre niveau ...pour le bien des entrepreneurs accompagnés ! Merci"
     },
-    // Ajoutez d'autres avis ici
   ],
   [
     {
+      avatar: "/images/avis/tom.png",
       name: "Tom Depril Dupre",
       username: "@tomdd",
-      role: "Client satisfait",
+      role: "Entrepreneur",
       text: "Agence très sérieuse et réactive ! Merci Mehdi !",
     },
-    // Ajoutez d'autres avis ici
   ],
   [
     {
-      name: "Mouloud Feknous",
-      username: "@mouloudf",
-      role: "Représentant de VETAGRAL",
-      text: "Le travail réalisé pour la société VETAGRAL est très satisfaisant.",
+      avatar: "/images/avis/isabelle-de-ochandiano.jpeg",
+      name: "Isabelle De Ochandiano",
+      role: "Fondatrice d'Itinérances",
+      text: "Je ne peux que recommander chaleureusement La Clinique des Marques. L'équipe m'a permis de définir l'identité de ma Société Itinérances en prenant le temps, en ayant une approche pédagogique et fine pour cerner ma demande.",
     },
     // Ajoutez d'autres avis ici
   ],
@@ -70,18 +69,16 @@ const testimonials = shallowRef([
                     class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <p
-                      class="text-gray-700 text-base whitespace-pre-line font-normal mb-6 leading-relaxed"
+                      class="text-gray-700 xl:text-base text-sm whitespace-pre-line font-normal mb-6 leading-relaxed"
                   >
-                    “{{ testimonial.text }}”
+                    {{ testimonial.text }}
                   </p>
-                  <div class="mt-6 flex items-center">
-                    <div class="flex flex-col">
-                      <span
-                          class="text-gray-900 text-lg font-bold"
-                      >{{ testimonial.name }}</span>
-                      <span
-                          class="text-gray-500 text-sm font-medium"
-                      >{{ testimonial.role }}</span>
+
+                  <div class="flex items-center gap-3">
+                    <UAvatar :src="testimonial.avatar" size="xl"/>
+                    <div>
+                      <p class="absans xl:text-md text-sm">{{ testimonial.name }}</p>
+                      <p class="text-xs font-semibold">{{ testimonial.role}}</p>
                     </div>
                   </div>
                 </div>

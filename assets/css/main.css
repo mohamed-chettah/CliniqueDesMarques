@@ -47,7 +47,7 @@
   }
 
   .containers {
-    @apply 2xl:container 2xl:mx-auto xl:mx-20 sm:mx-auto
+    @apply 2xl:container 2xl:mx-auto xl:mx-20
   }
 
 }

@@ -1,10 +1,26 @@
 <script setup lang="ts">
+onMounted(() => {
+  useGsap.to('.note-google',{
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backdropFilter: 'blur(10px)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+    scrollTrigger:{
+      trigger:'.who',
+      pinnedContainer: ".main",
+      start:'top 90%',
+      end : 'bottom 10%',
+      toggleActions: 'play reset play reset',
+    }
+  })
+
+});
+
 
 import IndicatorNumbers from "~/components/WhoWeAre/IndicatorNumbers.vue";
 </script>
 
 <template>
-
+  <div class="containers who">
   <UCard class=" bg-beige border xl:mx-0 mx-10 sm:p-4 p-0">
     <UContainer>
       <div class="flex flex-col">
@@ -32,6 +48,7 @@ import IndicatorNumbers from "~/components/WhoWeAre/IndicatorNumbers.vue";
       </div>
     </UContainer>
   </UCard>
+  </div>
 
 </template>
 

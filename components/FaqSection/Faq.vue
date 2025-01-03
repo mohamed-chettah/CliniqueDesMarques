@@ -5,12 +5,6 @@ import CollapseQuestion from "~/components/FaqSection/CollapseQuestion.vue";
 
 const firstQuestion = ref([
   {
-    question: "Qu'est-ce qu'une agence de branding et " +
-        "comment peut-elle aider mon entreprise à Lyon ?",
-    answer: "Une agence de branding à Lyon est spécialisée dans la création et le développement de l’identité de marque. Nous accompagnons les entreprises lyonnaises dans la construction de leur plateforme de marque, la définition de leur positionnement, la création de leur identité visuelle (logo, charte graphique) et la construction d’une image de marque cohérente sur tous les supports de communication.",
-    open: false,
-  },
-  {
     question: "Quels services propose " +
         "votre agence de branding à Lyon ?",
     answer: "Notre agence lyonnaise propose une gamme complète de services :  Audit de marque et positionnement stratégique, Création d’identité visuelle (logo, charte graphique), Design d’emballage et packaging, Stratégie de communication, Branding digital, Naming et identité verbale, Activation de marque sur le territoire lyonnais.",
@@ -48,13 +42,7 @@ const secondQuestion = ref([
     open: false,
   },
   {
-    question: "Comment débuter une collaboration " +
-        "avec votre agence de branding ?",
-    answer: "Contactez-nous par téléphone ou via notre formulaire de contact. Nous organisons une première réunion en visio ou dans nos locaux à Lyon. Nous vous envoyons une proposition détaillée sous 48h. Le projet démarre dès validation du devis.",
-    open: false,
-  },
-  {
-    question: "Quelles entreprises lyonnaises avez-vous déjà accompagnées ?",
+    question: "Quelles entreprises lyonnaises avez-vous accompagnées ?",
     answer: "Notre agence de branding a accompagné de nombreuses entreprises locales dans des secteurs variés : restauration, immobilier, technologie, industrie, cosmétique… Nous vous présenterons nos références lors de notre premier rendez-vous à Lyon ou en visio.",
     open: false,
   },
