@@ -8,7 +8,22 @@ import Cta from "~/components/Ui/Cta.vue";
 import Faq from "~/components/FaqSection/Faq.vue";
 import WhoWeAre from "~/components/WhoWeAre/WhoWeAre.vue";
 import TabsContact from "~/components/Contact/TabsContact.vue";
-import Background from "~/components/Contact/Background.vue";
+
+onMounted(() => {
+  useGsap.to('.note-google',{
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    backdropFilter: 'blur(10px)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+    scrollTrigger:{
+      trigger:'.last-div',
+      pinnedContainer: ".main",
+      start:'top 90%',
+      end : 'bottom',
+      toggleActions: 'play reset play reset',
+    }
+  })
+
+});
 
 
 </script>
@@ -41,7 +56,7 @@ import Background from "~/components/Contact/Background.vue";
   <div class="bg-[#6716DE] mt-32 py-20">
 
 
-      <div class="container mx-auto">
+      <div class="container mx-auto last-div">
         <WhoWeAre />
 
         <TabsContact />

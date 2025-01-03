@@ -15,7 +15,7 @@ import ButtonCta from "~/components/Ui/ButtonCta.vue";
 
     <div class="flex gap-5 justify-center mt-5  bg-titan-white-500">
       <ButtonCta class="" size="" to="#contact" label="Contactez nous" />
-      <UButton to="#contact" size="xl" class="xl:text-[14px] text-[12px] rounded-xl bg-white border text-black hover:bg-[#FCF2F2] hover:text-black">Nos Réalisations</UButton>
+      <UButton to="#casestudy" size="xl" class="xl:text-[14px] text-[12px] rounded-xl bg-white border text-black hover:bg-[#FCF2F2] hover:text-black">Nos Réalisations</UButton>
     </div>
     <Clients />
   </div>

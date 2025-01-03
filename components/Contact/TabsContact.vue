@@ -37,7 +37,7 @@ const state = reactive({
 
           <p class="text-sm">Précisez les domaines : </p>
 
-          <div class="flex xl:gap-2 gap-4 text-purple">
+          <div class="flex xl:flex-row flex-col gap-2  text-purple">
             <div class="flex xl:flex-row flex-col gap-2">
               <UCheckbox color="neutral"  label="Identité Visuelle" />
               <UCheckbox color="neutral" label="WebDesign" />
@@ -49,7 +49,7 @@ const state = reactive({
 
           </div>
 
-          <UButton type="submit" class="w-full cursor-pointer bg-purple hover:bg-black/70 mt-2" ><span class="text-center">Envoyer un message </span></UButton>
+          <UButton type="submit" class="w-full cursor-pointer bg-purple hover:bg-black mt-2 h-10" ><span class="text-center">Envoyer un message </span></UButton>
         </UForm>
 
   </div>

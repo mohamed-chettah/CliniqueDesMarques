@@ -59,7 +59,7 @@ const testimonials = shallowRef([
 </script>
 <template>
   <div id="testimonials" class="py-16">
-    <div class="xl:mx-0 mx-10">
+    <div class="xl:mx-0 sm:mx-10">
       <div class="border mt-10 p-10 bg-[url('/images/celest.jpeg')] bg-cover bg-no-repeat rounded-xl shadow-lg">
         <div class="flex my-16 rounded-2xl mx-auto">
           <div class="font-inter mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
@@ -69,12 +69,12 @@ const testimonials = shallowRef([
                     class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <p
-                      class="text-gray-700 xl:text-[15px] text-sm whitespace-pre-line font-normal mb-6 leading-relaxed"
+                      class="text-gray-700 xl:text-[15px] sm:text-sm text-xs whitespace-pre-line font-normal mb-6 leading-relaxed"
                   >
                     {{ testimonial.text }}
                   </p>
 
-                  <div class="flex items-center gap-3">
+                  <div class="flex sm:flex-row flex-col sm:items-center items-start gap-3">
                     <UAvatar :src="testimonial.avatar" size="xl"/>
                     <div>
                       <p class="absans xl:text-md text-sm">{{ testimonial.name }}</p>

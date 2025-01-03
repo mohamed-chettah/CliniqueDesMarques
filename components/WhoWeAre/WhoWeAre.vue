@@ -1,19 +1,5 @@
 <script setup lang="ts">
-onMounted(() => {
-  useGsap.to('.note-google',{
-    backgroundColor: 'rgba(255, 255, 255, 0.2)',
-    backdropFilter: 'blur(10px)',
-    border: '1px solid rgba(255, 255, 255, 0.2)',
-    scrollTrigger:{
-      trigger:'.who',
-      pinnedContainer: ".main",
-      start:'top 90%',
-      end : 'bottom 10%',
-      toggleActions: 'play reset play reset',
-    }
-  })
 
-});
 
 
 import IndicatorNumbers from "~/components/WhoWeAre/IndicatorNumbers.vue";
