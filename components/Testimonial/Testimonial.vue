@@ -69,7 +69,7 @@ const testimonials = shallowRef([
                     class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
                 >
                   <p
-                      class="text-gray-700 xl:text-base text-sm whitespace-pre-line font-normal mb-6 leading-relaxed"
+                      class="text-gray-700 xl:text-[15px] text-sm whitespace-pre-line font-normal mb-6 leading-relaxed"
                   >
                     {{ testimonial.text }}
                   </p>
