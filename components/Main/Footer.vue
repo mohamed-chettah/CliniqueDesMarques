@@ -100,7 +100,7 @@ const product_navigation = [
       <div
           class="gap-1 col-span-full mt-8 mb-2 flex items-center justify-center border-t pt-4 text-sm"
       >
-       <p>© 2024 - Made by </p>  <a class="text-[#F0BF6C]" href="https://www.mc-studio.eu/"> MC Studio</a>
+       <p>© 2024 - Made by </p>  <a href="https://www.mc-studio.eu/"> MC Studio</a>
       </div>
     </div>
     </div>
