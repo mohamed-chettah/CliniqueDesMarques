@@ -24,7 +24,7 @@ const listCaseStudy = [
     listBadge: ["Naming", "Identité visuelle", "Territoire de marque","Industrie"],
     title: "Manufacture des blouses",
     description1: "Notre analyse a révélé deux axes stratégiques essentiels pour le repositionnement de la marque : la signification du vêtement de travail pour les collaborateurs et le manque de stylisme dans l’univers des vêtements professionnels.",
-    description2: "La Manufacture des Blouses a changé de nom pour refléter une offre plus large de vêtements professionnels sur mesure. Son identité visuelle et sa typographie ont été modernisées pour allier tradition et modernité.",
+    description2: "L'entreprise a changé de nom pour refléter une offre plus large de vêtements professionnels sur mesure. Son identité visuelle et sa typographie ont été modernisées pour allier tradition et modernité.",
     listTache: ["Typographie", "Charte graphique", "Broderie"],
     avisClient: {
       avis: "Une prestation sur-mesure et un accompagnement de qualité réalisé" +

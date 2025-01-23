@@ -1,18 +1,23 @@
 import type { Config } from 'tailwindcss'
+
 export default <Partial<Config>>{
   darkMode: ['variant', '&:not(.light *)'],
+  content: [
+    "./components/**/*.{vue,js,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./app.vue",
+    "./plugins/**/*.{js,ts}",
+  ],
   theme: {
-    colors: {
-      'purples-100': '#907af7',
-      'purples-200': '#5e1dd5',
-      'test': '#6716DE',
-    },
     extend: {
       colors: {
-        'purples-100': '#907af7',
-        'purples-200': '#5e1dd5',
-        'test': '#6716DE',
-        'titan': {
+        purple: {
+          100: '#907af7',
+          200: '#5e1dd5',
+        },
+        test: '#6716DE',
+        titan: {
           '50': '#f5f3ff',
           '100': '#efecfe',
           '200': '#dcd6fe',

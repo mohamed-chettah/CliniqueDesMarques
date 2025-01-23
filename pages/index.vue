@@ -43,7 +43,6 @@ onMounted(() => {
   <GroupCaseStudy />
 
   <div class="containers ">
-    <Cta />
 
     <Testimonial />
 

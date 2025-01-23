@@ -16,7 +16,7 @@ useHead({
     class: 'nuxt-ui-scrollbars',
   },
 });
-// For Nuxt 3
+
 definePageMeta({
   colorMode: 'light',
 })

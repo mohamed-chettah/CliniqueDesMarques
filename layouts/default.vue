@@ -20,12 +20,15 @@ import Footer from "~/components/Main/Footer.vue";
       </div>
     </a>
   </div>
-
+  <div id="hero" class="top-0 absolute"></div>
   <Navbar class="pt-2"/>
+
 
   <div class="background"></div>
   <div class="shape1"></div>
   <div class="shape2"></div>
+
+
   <div class="mt-52 contenu">
     <slot />
   </div>

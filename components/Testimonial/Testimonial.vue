@@ -58,18 +58,28 @@ const testimonials = shallowRef([
 
 </script>
 <template>
-  <div id="testimonials" class="py-16">
-    <div class="xl:mx-0 sm:mx-10">
-      <div class="border mt-10 p-10 bg-[url('/images/celest.jpeg')] bg-cover bg-no-repeat rounded-xl shadow-lg">
-        <div class="flex my-16 rounded-2xl mx-auto">
-          <div class="font-inter mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
+
+
+  <div id="testimonials">
+
+
+    <div class="xl:mx-0 sm:mx-10 mx-5">
+      <div class="flex flex-col items-center justify-center mt-32 mb-5">
+        <h2 class="font-semibold">Avis Clients</h2>
+        <h3 class="text-center md:text-3xl text-2xl font-bold mt-2 text-purple">
+          Regardez ce que disent nos clients !
+        </h3>
+      </div>
+      <div class="border rounded-xl shadow-lg">
+        <div class="flex rounded-2xl mx-auto">
+          <div class="font-inter grid grid-cols-1 md:grid-cols-3 gap-3 p-4">
             <template v-for="(col, index) in testimonials" :key="index">
               <template v-for="(testimonial, _index) in col" :key="_index">
                 <div
-                    class="bg-white border border-gray-200 rounded-2xl p-6 shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl"
+                    class="flex flex-col justify-end bg-white/70 border-t-[#6716DE] border border-gray-200 rounded-2xl p-6 shadow-lg transform transition duration-300 hover:shadow-2xl"
                 >
                   <p
-                      class="text-gray-700 xl:text-[15px] sm:text-sm text-xs whitespace-pre-line font-normal mb-6 leading-relaxed"
+                      class="text-gray-700 text-xs italic whitespace-pre-line font-normal mb-6 leading-relaxed"
                   >
                     {{ testimonial.text }}
                   </p>

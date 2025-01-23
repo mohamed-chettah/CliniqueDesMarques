@@ -6,10 +6,10 @@ import ButtonCta from "~/components/Ui/ButtonCta.vue";
 
 <template>
 
-  <div class="hero text-center flex flex-col gap-5 sm:mx-0 mx-5">
+  <div  class="hero text-center flex flex-col gap-5 sm:mx-0 mx-5">
     <h1 class="xl:text-7xl md:text-5xl sm:text-3xl text-[25px] antialiased tracking-wide font-semibold md:leading-tight">L’Agence de <span class="text-purple">Branding</span>  et <br> de <span class="text-purple">Communication </span>  à Lyon.</h1>
 
-    <p class="xl:text-lg text-sm">
+    <p class="xl:text-lg text-sm text-purples-200">
       Nous donnons de la personnalité aux entreprises. Elles performent. Leurs clients adorent.
     </p>
 

@@ -69,8 +69,7 @@ const enter = ref({
   <div id="faq">
 
   </div>
-  <div class="bg-dark-50 dark:bg-dark-950 w-full px-4 mt-32  ">
-    <UContainer>
+  <div class="bg-dark-50 dark:bg-dark-950 xl:w-full w-[80%] mt-32 xl:mx-0 mx-auto ">
       <div class="flex flex-col">
         <h2 class="font-semibold">FAQ</h2>
         <h3 class="md:text-3xl text-2xl font-bold mt-2 text-purple">
@@ -93,6 +92,5 @@ const enter = ref({
         </div>
 
       </div>
-    </UContainer>
   </div>
 </template>
