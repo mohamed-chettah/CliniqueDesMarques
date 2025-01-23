@@ -12,8 +12,8 @@ const props = defineProps({
     <div class="flex items-center gap-3">
       <UAvatar :src="avisClient.avatar" size="xl"/>
       <div>
-        <p class="absans">{{ avisClient.name }}</p>
-        <p class="text-xs font-semibold">{{ avisClient.job }}</p>
+        <p class="absans xl:text-md text-sm font-semibold">{{ avisClient.name }}</p>
+        <p class="text-xs font-light">{{ avisClient.job }}</p>
       </div>
     </div>
   </div>

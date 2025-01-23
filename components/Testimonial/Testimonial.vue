@@ -37,21 +37,20 @@ const testimonials = shallowRef([
   ],
   [
     {
+      avatar: "/images/avis/isabelle-de-ochandiano.jpeg",
+      name: "Isabelle De Ochandiano",
+      role: "Fondatrice d'Itinérances",
+      text: "Je ne peux que recommander chaleureusement La Clinique des Marques. L'équipe m'a permis de définir l'identité de ma Société Itinérances en prenant le temps, en ayant une approche pédagogique et fine pour cerner ma demande.",
+    },
+  ],
+  [
+    {
       avatar: "/images/avis/tom.png",
       name: "Tom Depril Dupre",
       username: "@tomdd",
       role: "Entrepreneur",
       text: "Agence très sérieuse et réactive ! Merci Mehdi !",
     },
-  ],
-  [
-    {
-      avatar: "/images/avis/isabelle-de-ochandiano.jpeg",
-      name: "Isabelle De Ochandiano",
-      role: "Fondatrice d'Itinérances",
-      text: "Je ne peux que recommander chaleureusement La Clinique des Marques. L'équipe m'a permis de définir l'identité de ma Société Itinérances en prenant le temps, en ayant une approche pédagogique et fine pour cerner ma demande.",
-    },
-    // Ajoutez d'autres avis ici
   ],
   // Ajoutez d'autres groupes d'avis si nécessaire
 ]);
@@ -87,8 +86,8 @@ const testimonials = shallowRef([
                   <div class="flex sm:flex-row flex-col sm:items-center items-start gap-3">
                     <UAvatar :src="testimonial.avatar" size="xl"/>
                     <div>
-                      <p class="absans xl:text-md text-sm">{{ testimonial.name }}</p>
-                      <p class="text-xs font-semibold">{{ testimonial.role}}</p>
+                      <p class="absans xl:text-md text-sm font-semibold">{{ testimonial.name }}</p>
+                      <p class="text-xs font-light">{{ testimonial.role}}</p>
                     </div>
                   </div>
                 </div>
