@@ -49,7 +49,9 @@ const state = reactive({
 
           </div>
 
-          <UButton type="submit" class="w-full cursor-pointer bg-purple hover:bg-black mt-2 h-10" ><span class="text-center">Envoyer un message </span></UButton>
+          <UButton to="#casestudy"
+                   trailing-icon="i-lucide-arrow-right"
+                   size="xl" class="xl:text-[14px] text-[12px] rounded-xl bg-purple border text-white hover:bg-white hover:text-black">Envoyer un message </UButton>
         </UForm>
 
   </div>
