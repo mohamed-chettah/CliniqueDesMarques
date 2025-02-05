@@ -6,7 +6,7 @@ import ButtonCta from "~/components/Ui/ButtonCta.vue";
 </script>
 
 <template>
-  <div class="z-20 fixed right-0 top-5 left-0 rounded-xl bg-white sm:mx-auto mx-2 lg:w-[80%] sm:w-[90%] border">
+  <div class="z-20 fixed right-0 top-5 left-0 rounded-xl bg-white sm:mx-auto mx-2 lg:w-[89%] sm:w-[90%] border">
     <div class="flex justify-center xl:gap-52 md:gap-24 gap-6 items-center py-3">
       <NuxtLink class="hover:font-bold" to="#hero">
         <NuxtImg class="lg:w-36 sm:w-24 w-20" src="./images/Logo-la-clinique-dm.svg" />
